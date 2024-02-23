@@ -1,8 +1,63 @@
 body {
-    height: 3000px;
-    background: linear-gradient(55deg, #ffffff 0%, #d81d1d 51%, #ff0000 85%)
+
 }
 
+#navdiv {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#navdiv nav {
+    background-color: black;
+    position: relative;
+    width: 475px;
+    height: 50px;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navdiv nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #194b4f, #33fffc);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#navdiv nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    z-index: 1;
+
+}
+
+#navdiv nav a:nth-child(1):hover~span{
+    left: 0px;
+}
+#navdiv nav a:nth-child(2):hover~span{
+    left: 90px;
+}
+#navdiv nav a:nth-child(3):hover~span{
+    left: 180px;
+}
+#navdiv nav a:nth-child(4):hover~span{
+    left: 275px;
+}
+#navdiv nav a:nth-child(5):hover~span{
+    left: 380px;
+}
 
 #wikipedia {
     font-weight: bold;
