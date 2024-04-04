@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terv</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body onload="pagefunction()">
+
+    <!-- Navbár/Sidebar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button style="margin-right:20px;" class="w3-button w3-xlarge" onclick="w3_open()">☰</button>
+          <a class="navbar-brand" href="#">("Weboldal név")</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#">PC</a>
+              <a class="nav-link" href="#">XBOX</a>
+              <a class="nav-link" href="#">PlayStation</a>
+              <a class="nav-link" href="#">Nintendo</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="Sidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">&times;</button>
+        <button onclick="pagefunction(header)" class="w3-bar-item w3-button">Bevezetés</button>
+        <button onclick="pagefunction(games)" class="w3-bar-item w3-button">Játékok</button>
+        <button class="w3-bar-item w3-button">(NEM TUDOM MIT IDE DE IGEN!)</button>
+      </div>
+
+      <!-- Tartalom -->
+      <div id="header">
+        <h1 style="text-align: center;">Stratégia</h1>
+        <div class="szoveg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus eget diam eleifend rutrum. Proin nisi libero, laoreet a porta in, fringilla feugiat justo. Aliquam sed laoreet magna, eu porttitor magna. Cras convallis dignissim elit, sed accumsan libero vehicula non. Cras nibh enim, varius nec placerat in, venenatis eget sem. Sed lobortis purus ut massa porta pharetra. Vivamus convallis purus libero, et cursus metus faucibus non.</p>
+
+            <p>Mauris imperdiet turpis eget nibh iaculis tincidunt. Phasellus varius lorem vel mauris vehicula pulvinar. In nunc lacus, congue ut metus eu, pulvinar congue nunc. Aliquam ac metus elementum, bibendum ipsum at, lobortis velit. Integer nisi dolor, commodo in ipsum sed, viverra tincidunt purus. Ut bibendum cursus leo, nec venenatis nisi commodo ut. Aliquam luctus nisl et mi pharetra, sed interdum est facilisis. Mauris dui est, ultricies sed euismod id, egestas vitae erat.</p>
+            
+            <p>Phasellus pellentesque, neque et fermentum pretium, arcu massa gravida nisi, eget ultrices mauris ante in nisi. Phasellus fermentum sem eu massa molestie sagittis. Maecenas mattis facilisis tellus accumsan porttitor. Praesent vitae eros lobortis tortor congue porta eu eu odio. Sed efficitur condimentum semper. Fusce auctor porttitor auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse eget faucibus lectus. Aliquam in lectus iaculis, vestibulum enim vitae, lobortis neque. Pellentesque rutrum mollis sapien at laoreet. Sed in sapien in eros volutpat mollis ac at turpis.</p>
+            
+            <p>In facilisis libero nec faucibus mattis. Proin et vulputate diam. Aenean volutpat et felis id pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse maximus tincidunt ante quis vestibulum. In accumsan erat in libero tempor, quis vehicula nulla porta. Etiam consequat felis et mi finibus, vel tincidunt nisl auctor. Integer varius metus non diam ullamcorper tincidunt vitae venenatis elit. Nulla eget arcu eget lacus consectetur pharetra nec quis nisi. Etiam commodo risus sit amet leo interdum vehicula. Duis sit amet fermentum tortor, vel scelerisque neque.</p>
+            
+            <p>Nam posuere lacus vel elementum malesuada. Sed gravida vestibulum est vel vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sapien felis, gravida vel sodales tincidunt, elementum eget dui. Proin eu orci id massa egestas pulvinar. Sed commodo ultricies nibh ut facilisis. Nam ullamcorper nec justo ut ultrices. Vivamus vel sem ipsum. In at magna mauris. Aenean rutrum lobortis vestibulum. Vestibulum facilisis magna vel odio tristique, et bibendum ipsum posuere. Ut molestie gravida risus, eget cursus velit sodales non. Nam luctus aliquam ipsum a semper.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus eget diam eleifend rutrum. Proin nisi libero, laoreet a porta in, fringilla feugiat justo. Aliquam sed laoreet magna, eu porttitor magna. Cras convallis dignissim elit, sed accumsan libero vehicula non. Cras nibh enim, varius nec placerat in, venenatis eget sem. Sed lobortis purus ut massa porta pharetra. Vivamus convallis purus libero, et cursus metus faucibus non.</p>
+
+            <p>Mauris imperdiet turpis eget nibh iaculis tincidunt. Phasellus varius lorem vel mauris vehicula pulvinar. In nunc lacus, congue ut metus eu, pulvinar congue nunc. Aliquam ac metus elementum, bibendum ipsum at, lobortis velit. Integer nisi dolor, commodo in ipsum sed, viverra tincidunt purus. Ut bibendum cursus leo, nec venenatis nisi commodo ut. Aliquam luctus nisl et mi pharetra, sed interdum est facilisis. Mauris dui est, ultricies sed euismod id, egestas vitae erat.</p>
+            
+            <p>Phasellus pellentesque, neque et fermentum pretium, arcu massa gravida nisi, eget ultrices mauris ante in nisi. Phasellus fermentum sem eu massa molestie sagittis. Maecenas mattis facilisis tellus accumsan porttitor. Praesent vitae eros lobortis tortor congue porta eu eu odio. Sed efficitur condimentum semper. Fusce auctor porttitor auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse eget faucibus lectus. Aliquam in lectus iaculis, vestibulum enim vitae, lobortis neque. Pellentesque rutrum mollis sapien at laoreet. Sed in sapien in eros volutpat mollis ac at turpis.</p>
+            
+            <p>In facilisis libero nec faucibus mattis. Proin et vulputate diam. Aenean volutpat et felis id pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse maximus tincidunt ante quis vestibulum. In accumsan erat in libero tempor, quis vehicula nulla porta. Etiam consequat felis et mi finibus, vel tincidunt nisl auctor. Integer varius metus non diam ullamcorper tincidunt vitae venenatis elit. Nulla eget arcu eget lacus consectetur pharetra nec quis nisi. Etiam commodo risus sit amet leo interdum vehicula. Duis sit amet fermentum tortor, vel scelerisque neque.</p>
+            
+            <p>Nam posuere lacus vel elementum malesuada. Sed gravida vestibulum est vel vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sapien felis, gravida vel sodales tincidunt, elementum eget dui. Proin eu orci id massa egestas pulvinar. Sed commodo ultricies nibh ut facilisis. Nam ullamcorper nec justo ut ultrices. Vivamus vel sem ipsum. In at magna mauris. Aenean rutrum lobortis vestibulum. Vestibulum facilisis magna vel odio tristique, et bibendum ipsum posuere. Ut molestie gravida risus, eget cursus velit sodales non. Nam luctus aliquam ipsum a semper.</p>
+        </div>
+      </div>
+
+      <div id="games">
+        <h1 style="text-align: center;">Stratégia-játékok</h1>
+        
+      </div>
+
+      <!-- Script -->
+      <script>
+function sidebar_open() {
+  document.getElementById("Sidebar").style.display = "block";
+}
+
+function sidebar_close() {
+  document.getElementById("Sidebar").style.display = "none";
+}
+        </script>
+             
+      </body>
+      </html>
+      
