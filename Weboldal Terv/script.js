@@ -13,3 +13,12 @@ function pagefunction(page) {
     }
 
 }
+
+function card_function(hover) {
+    if(hover == 1) {
+        document.getElementById("kártya").style.background = "rgba(0,0,0,0.5)";
+    }
+    else if (hover == 2 || hover === undefined) {
+        document.getElementById("kártya").style.background = "rgba(0,0,0,0)"
+    }
+}
