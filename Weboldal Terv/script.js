@@ -14,15 +14,16 @@ function pagefunction(page) {
 
 }
 
-function cardfunction(hover) {
+function cardfunction(hover, game) {
+    sel_game = document.getElementById(game)
     if(hover == 1) {
-        document.getElementById("kártya").style.background = "rgba(0,0,0,0.5)";
+        sel_game.style.background = "rgba(0,0,0,1)";
     }
     else if (hover == 2 || hover === undefined) {
-        document.getElementById("kártya").style.background = "rgba(0,0,0,0)";
+        sel_game.style.background = "rgba(0,0,0,0)";
     }
     else if (hover == 3)
     {
-        window.alert("HA EZT OLVASOD AKKOR MINDEN STABIL!!! JA NEM...")
+        sel_game.modal
     }
 }
