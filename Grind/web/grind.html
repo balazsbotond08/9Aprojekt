@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/3.4/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/3.4/examples/navbar-fixed-top/navbar-fixed-top.css">
     <link rel="stylesheet" href="grind.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -19,7 +21,7 @@
     <script src="grind.js"></script>
     <title>Grind</title>
 </head>
-<div class="pos-f-t">
+<!--div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4" id="navdiv">
             <nav>
@@ -32,14 +34,51 @@
             </nav>
         </div>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
+
+    < nav class="navbar navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
             aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    </nav>
-</div>
-
+    </nav >
+</div-->
+<nav class="navbar navbar-default bg-dark navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../navbar/">Default</a></li>
+          <li><a href="../navbar-static-top/">Static top</a></li>
+          <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 <body>
     <header>
 
@@ -62,7 +101,14 @@
         <h1>Destiny 2</h1>
 
         <h1> Új season</h1>
+        <table class="middle no">
+            <tr>
+                <td class="non">
                     <p><img class="rcorners left" src="../images/28169680598_98f82498bd_b.jpg"></p>
+                </td>
+                        </div>
+                      </div>
+                      <td class="non">
         <p class="text right">A Destiny 2-nek új szezonja érkezett, amely a <u>Season of Wish</u>. Ez a <u>Final
                 Shape</u>
             kiegészítőjének való előkészülésről szól. Ebben a szezonban a figyelem az Ahamkara,
@@ -74,21 +120,44 @@
             hogy kikerüld a csapdákat, és legyőzd a hatalmas ellenségeket,
             hogy megszerezzétek Riven, az egyik Ahamkara utolsó, megszennyezetlen tojásait. Cserébe Riven a
             tizenötödik kívánságot teljesíti.</p>
+        </td>
+        </tr>
+        </table>
+        <table class="middle no">
+            <tr>
+                <td class="non">
         <p><img class="rcorners left" src="../images/activision-destiny-2-bungie-destiny-destiny-2-warmind-warmin.jpg" alt=""></p>
+    </td>
+    <td class="non">
         <h1>A jelenlegi expansion</h1>
         <p class="text">A <u>Lightfall</u> Destiny 2 legújabb expansion-je. Itt meglátogatjuk a Neptunuszt annak
             érdekében, hogy Calust, az egyik főgonoszt megállítsuk és megmentsük Neptunusz lakosait. Küldetésünk
             közben viszont rábukkanunk egy új, ez előtt nem ismert erőre, ami a valóságot összetartó szövet. Utunk
             során elsajátítjuk ezt az erőt, hogy legyőzhessük vele Calust.</p>
+        </td>
+        </tr>
+        </table>
+        <table class="middle no">
+            <tr>
+                <td class="non">
         <p><img class="rcorners left" src="../images/8486223007_970a75601b_b.jpg" alt=""></p>
+    </td>
+    <td class="non">
         <h1>Az előző expansion</h1>
         <p class="text">A <u>Witch Queen</u> volt az előző expansion, ami egy hatalmas siker volt. Sok új
             tevékenységet és egészséges változtatásokat hozott be a játékba, emellett érdekes módon folytatta a
             történetet. Kifejezetten pozitívan fogadta a játékosok nagysága. Emellett itt fedték fel a játék új
             főellenségét, a <u>Witness</u>-t.</p>
-
+        </td>
+            </tr>
+        </table>
         <h1>Warframe</h1>
+        <table class="middle no">
+            <tr>
+            <td class="non">
         <p><img class="rcorners left" src="../images/dgisc36-2e74f0b4-169a-4c76-beee-6242452efb76.jpg" alt=""></p>
+    </td>
+    <td class="non">
         <p class="text">A Warframe egy ingyenesen játszható, akció-orientált sci-fi szerepjáték (RPG), amit a Digital
             Extremes fejlesztett és kiadott. A játék jövőbeli időben játszódik, ahol a játékosok a Tenno nevű
             harcosokként küzdenek különböző frakciók ellen, miközben különböző bolygókon és űrállomásokon kalandoznak.
@@ -109,11 +178,16 @@
             küldetésekkel és funkciókkal. A játéknak hatalmas és elkötelezett rajongótábora van, és számos díjat és
             elismerést nyert a megjelenése óta.
         </p>
-
-
+    </td>
+</tr>
+    </table>
         <h1>Deep Rock Galactic</h1>
+        <table class="middle no">
+            <tr>
+                <th class="non">
         <p><img class="rcorners left" src="../images/deep-rock-galactic-peshchera-gnomy-bronia-oruzhie-ogon-obstr.jpg" alt=""></p>
-
+    </th>
+    <td class="non">
         <p class="text">A Deep Rock Galactic egy ingyenesen játszható, akció-orientált sci-fi túlélőjáték, amelyet a
             Ghost Ship Games fejlesztett és kiadott.
             <br>
@@ -137,10 +211,17 @@
             amely rendszeresen új tartalmakkal és frissítésekkel szolgál a játékosoknak, hogy mindig új kihívásokkal és
             kalandokkal szembesüljenek az űr titokzatos mélységeiben.
         </p>
-
-
+    </td>
+    </tr>
+    </table>
         <h1>Unturned</h1>
+        <table class="middle no">
+            <tr>
+<th class="non">
+
         <p><img class="rcorners left" src="../images/14516432428_b6f206c4f7_b.jpg" alt=""></p>
+    </th>
+    <td class="non">
         <p class="text">Az Unturned egy túlélőjáték, amelyben a játékosok egy poszt-apokaliptikus világban próbálnak
             túlélni és újraépíteni a civilizációt. Az alábbiakban néhány főbb jellemzőjét emeljük ki:
             <br><br>
@@ -158,13 +239,17 @@
             Segíts a közösség újjáépítésében: Akár offline, akár egyedül játszol, rengeteg teendő vár rád.
             <br><br>
             Erősítsd meg erődödet: Építs erődöt, tárolj és védekezz a zombikkal szemben.</p>
-
-
-
+        </td>
+        </tr>
+        </table>
 
         <h1>Bordelands 3</h1>
-
+        <table class="middle no">
+            <tr>
+                <th class="non">
         <p><img class="rcorners left" src="../images/borderlands_3__red_wallpaper_4k_hd_by_neolinkster_ddgawts-fullview.jpg" alt=""></p>
+    </th>
+    <td class="non">
         <p class="text">A Borderlands 3 egy akciódús lövöldözős RPG, amelyet a Gearbox Software fejlesztett és kiadott.
             A játék a Borderlands sorozat legújabb része, amelyben ismét visszatérünk a Pandora világába és új kalandok
             várnak ránk. Néhány főbb jellemzője:
@@ -185,11 +270,16 @@
             Dinamikus világ és történet: Kövesd nyomon a fő történetet és fedezd fel a mellékküldetéseket és rejtett
             titkokat a világban. A Borderlands 3 egy dinamikus és élénk világot kínál, amely folyamatosan változik és
             fejlődik a játékosok döntései alapján.</p>
-
-
+        </td>
+        </tr>
+        </table>
             <h1>Tom Clancy's The Division 2</h1>
-
+            <table class="middle no">
+                <tr>
+                    <th class="non">
 <p><img class="rcorners left" src="../images/tom-clancy-s-the-division-2-game-ubisoft.jpg" alt=""></p>
+</th>
+<td class="non">
             <p class="text">A Division 2 egy online, akció-orientált lövöldözős RPG élmény, ahol a felfedezés és a játékos-fejlődés
             alapvető fontosságúak. A játékosok egy elit ügynökcsoport tagjaként lépnek be a poszt-pandémiás Washington
             DC-be, hogy helyreállítsák az rendet és megakadályozzák a város összeomlását.
@@ -205,6 +295,9 @@
             <b>Műfaj-definiáló endgame:</b> Válassz egyedi osztály specializációt, hogy a legnehezebb kihívásokkal szembeszállj
             barátaiddal.</p>
 <p>
+</td>
+</tr>
+</table>
     <table class="middle">
         <tr>
             <th colspan="6">Top 5 legjátszottabb looter shooter játékok</th>
@@ -227,9 +320,27 @@
         </tr>
     </table>
 </p>
+<!--div class="slider">
+    <div class="slides">
+      <div class="slide active"><img src="../images/14516432428_b6f206c4f7_b.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="../images/28169680598_98f82498bd_b.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="../images/49100451222_711bfab435_b.jpg" alt="Image 3"></div-->
+    </div>
+  </div>
     </div>
     </div>
+<script>
+      const slides = document.querySelector('.slides');
+  const slideWidth = document.querySelector('.slide').clientWidth;
+  let currentIndex = 0;
 
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.children.length;
+    slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
+
+  setInterval(nextSlide, 5000);
+</script>
 </body>
 
 </html>

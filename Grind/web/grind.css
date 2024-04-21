@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/background.jpeg);
+    background-color:#222;
 }
 
 #navdiv {
@@ -114,3 +114,26 @@ td, th {
     text-align: center;
     padding: 8px;
   }
+
+  .slider {
+    width: 705px;
+    height: 405px;
+    padding: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+  }
+  .slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  .slide {
+    min-width: 100%;
+  }
+.no{
+    background-color: #222;
+}
+.non{
+    border: none;
+}
