@@ -1,30 +1,16 @@
+function pagefunction(page) {
+    const header = document.getElementById("header");
+    const games = document.getElementById("games");
 
-
-function pagefunction(page)
-{
-    page_header = document.getElementById("header")
-    page_games = document.getElementById("games")
-    page_funny = document.getElementById("funny")
-
-    if(page == header)
-    {
-        page_header.style.display = "block";
-        page_games.style.display = "none";
-        page_funny.style.display = "none";
-    }
-    
-    else if(page == games) 
-    {
-        page_header.style.display = "none";
-        page_games.style.display = "block";
-        page_funny.style.display = "none";
-    }
-
-    else if (page === undefined) 
-    {
-        page_header.style.display = "none";
-        page_games.style.display = "none";
-        page_funny.style.display = "block";
+    if (page === header) {
+        header.style.display = "block";
+        games.style.display = "none";
+    } else if (page === games) {
+        header.style.display = "none";
+        games.style.display = "block";
+    } else {
+        header.style.display = "block";
+        games.style.display = "none";
     }
 }
 
@@ -48,6 +34,7 @@ function cardfunction(hover, game) {
         else
         {
             modal.style.display = "block"
+            modal.style.background = "rgba(0, 0, 0, 0.6)"
         }
     }
 }
