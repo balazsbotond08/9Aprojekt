@@ -1,0 +1,40 @@
+body{
+    font-family: Ubuntu, Roboto, Minecraft;
+}
+
+footer{
+    background-color: gray;
+    text-align: center;
+    font-size: x-small;
+    line-height: 0px;
+    height: auto;
+    padding: 15px 0px 1px 0px;
+}
+
+.mineimg{
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+}
+
+.kozep{
+    text-align: center;
+}
+
+header{
+    height: 56px;
+    background-color: black;
+}
+
+.dropdown-menu{
+    --bs-dropdown-link-active-bg: #9fa6b2;
+}
+
+th{
+    width: 33.3vw;
+    text-align: center;
+    font-weight: normal;
+}
+
+.kiemelt{
+    font-weight: bold;
+}
