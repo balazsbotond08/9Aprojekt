@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(hatterkep.jpg);
+}
+.kozepre {
+    color: white;
+    text-align: center;
+}
+.kep {
+    float: left;
+    width: 1400px;
+    height: 500px;
+}
+p {
+    color: white;
+}
+.feher {
+    color: white;
+}
+.nagy {
+    text-size-adjust: 100;
+}
+hr {
+    width: 500px;
+}
+.muck {
+    width: 1465px;
+    height: 500px;
+}
+div {
+    background-color: darkslategray;
+    border-radius: 7.5px;
+}
+.meret {
+    font-size: 25px;
+}
+.right-align {
+  float: right;
+  margin-left: 20px;
+}
