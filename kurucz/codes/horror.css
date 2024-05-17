@@ -1,0 +1,14 @@
+body {
+    background-color: gray;
+    color: white;
+}
+
+.szoveg {
+    text-align: justify;
+}
+
+.keret{
+    margin: 5%;
+}
+
+
