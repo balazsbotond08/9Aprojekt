@@ -1,0 +1,96 @@
+nav {
+    background-color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(62, 62, 139);
+}
+body{
+    background-color: rgb(42, 42, 90);
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.keret1{
+    background-color: rgb(62, 62, 139);
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    width: 600px;
+    border-radius: 10px;
+}
+hr{
+    color: white;
+    width: 90%;
+    margin: auto;
+}
+
+.kepek{
+    height: 250px;
+    width: 200px;
+    border: 3px solid black; 
+}
+
+#cim{
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    width: 58%;
+    margin: auto;
+    background-color: rgb(62, 62, 139);
+    color: white;
+}
+
+ th ,td {
+    border: 1px solid rgb(3, 3, 85);
+    padding: 9px;
+    text-align: center;
+}
+
+.keret3{
+    background-color: rgb(62, 62, 139);
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.footer{
+    background-color: rgb(62, 62, 139);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+h5{
+    padding: 10px;
+}
+
+
+
+
