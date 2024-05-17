@@ -6,7 +6,7 @@ body {
 }
  h1 {
   text-align: center;
-  color: grey;
+  color: gray ;
 }
 
 .keret {
@@ -54,7 +54,7 @@ h3 {
 }
 
 .kepkeret {
-  width: 600px;
+  width: 700px;
   border: 4px solid #303030;
   padding: 20px;
   background-color: gray;
@@ -118,7 +118,43 @@ footer {
   color: black;
   margin-left: auto;
   margin-right: auto;
+  font-weight: bold;
 }
 
+.navbar {
+  background-color: gray;
+  color: black;
+}
 
+#feliratkozás {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
 
+.gomb {
+  border: 4px solid #303030;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.password {
+  border: 4px solid #303030;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.email {
+  border: 4px solid #303030;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}

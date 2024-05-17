@@ -15,6 +15,44 @@
 </head>
 
 <body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Kezdőlap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Bevezető</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Játékok
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#forza">Forza Horizon 5</a></li>
+              <li><a class="dropdown-item" href="#ride">Ride 4</a></li>
+              <li><a class="dropdown-item" href="#dirt">Dirt Rally 2.0</a></li>
+              <li><a class="dropdown-item" href="#assetto">Assetto Corsa</a></li>
+
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+          </li>
+        </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#feliratkozas">Feliratkozás</a>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+
   <h1 id="cim">Versenyős Játékok</h1>
   <hr />
   <div class="keret">
@@ -41,11 +79,11 @@
     </p>
   </div>
   <hr />
-  <br /> 
+  <br />
   <br />
   <h2>Néhány versenyzős játék</h2>
   <h3>1. Forza horizon 5</h3>
-  <div class="keret2">
+  <div class="keret2" id="forza">
     A Forza sorozat kiemelkedő teljesítményt nyújtva az élre került, magával
     rántva a teljes mezőnyt. A Horizon alcímmel ellátott, nyitott világú,
     árkádos mellékág olyan magas szintű autós szórakozást kínál, hogy mára
@@ -78,7 +116,7 @@
   </div>
   <hr />
   <h3>2. Ride 4</h3>
-  <div class="keret2">
+  <div class="keret2" id="ride">
     A RIDE 4 egy motoros versenyjáték, amely a kétkerekű vasparipák mellett az
     ezekkel járó életérzést is elhozza a képernyőkre. A RIDE 4 nem csupán egy
     versenyjáték, hanem az a cím, ami a motorozás életérzését is átadja. A
@@ -106,7 +144,7 @@
   </div>
   <hr />
   <h3>3. Dirt Rally 2.0</h3>
-  <div class="keret2">
+  <div class="keret2" id="dirt">
     Dirt Rally 2.0 egy lenyűgöző és kihívásokkal teli rally versenyjáték,
     amely a rallysport rajongói számára készült. A játékban az autóversenyzés
     izgalmas világába lehet belecsöppenni, és megküzeni a változatos terepen,
@@ -139,7 +177,7 @@
   <hr />
 
   <h3>4. Assetto Corsa</h3>
-  <div class="keret2">
+  <div class="keret2" id="assetto">
     Az Assetto Corsa egy valósághű autóverseny-szimulátor játék, amely a
     versenyzés szerelmeseinek készült. Ez a játék tökéletesen ötvözi a
     kifinomult autófizikát és a lenyűgöző grafikát, hogy valósághű élményt
@@ -177,27 +215,39 @@
   <br />
   <br />
 
-  <div class="subscription-form">
-    <h2>Feliratkozás hírlevélre</h2>
-    <form action="feliratkozas.php" method="post">
-        <label for="email">E-mail cím:</label>
-        <input type="email" id="email" name="email" required>
+  <div class="subscription-form" id="feliratkozas">
+    <h3 id="feliratkozás">Feliratkozás a hírlevélre</h3>
+    <form action="javascript:letsgo()">
+      <fieldset>
+        <legend>Adatok:</legend>
+        <label for="mail">Add meg az email címed!</label>
+        <input type="email" name="data" id="mail" class="email">
         <br>
-        <input type="checkbox" id="gdpr" name="gdpr" required>
-        <label for="gdpr">Elfogadom az adatkezelési tájékoztatót.</label>
+        <label for="pw">Adj meg egy erős jelszót!</label>
+        <input type="password" name="data" id="pw" class="password">
         <br>
-        <input type="submit" value="Feliratkozom">
-    </form>
-</div>
+        <input type="submit" value="OK" class="gomb">
 
-  <b>
-    <footer>
-      A weboldal a MSZC Kandó Kálmán Informatikai Technikum tulajdonában áll,
-      oktatási céllal készült!
-    </footer>
-  </b>
-  <br>
-  <br>
+      </fieldset>
+    </form>
+    <script>
+      function letsgo() {
+        alert("A jelszó:" + pw.value)
+        localStorage.setItem("email", mail.value)
+        localStorage.setItem(pass, pw.value)
+      }
+    </script>
+  </div>
+<br>
+<br>
+    <b>
+      <footer>
+        A weboldal a MSZC Kandó Kálmán Informatikai Technikum tulajdonában áll,
+        oktatási céllal készült!
+      </footer>
+    </b>
+    <br>
+    <br>
 </body>
 
 </html>
