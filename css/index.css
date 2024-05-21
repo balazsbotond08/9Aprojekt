@@ -35,3 +35,11 @@ header{
 .dropdown-menu{
     --bs-dropdown-link-active-bg: #9fa6b2;
 }
+
+.carousel-item{
+    height: 35vw;
+}
+
+@media screen and (min-width: 768px)  {
+    .mobile-break { display: none; }
+}
