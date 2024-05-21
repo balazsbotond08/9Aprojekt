@@ -80,6 +80,18 @@ body{
 
 }
 
+video{
+    max-width: 600px;
+}
+
+.videobal{
+    float: left;
+}
+
+.videojobb{
+    float: right;
+}
+
 #navdiv nav a:nth-child(1):hover~span{
     left: 0px;
 }
