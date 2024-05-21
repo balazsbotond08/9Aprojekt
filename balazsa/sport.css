@@ -34,10 +34,9 @@ h1{
 }
 .keret1{
     background-color: rgb(62, 62, 139);
-    margin: 20px;
+    margin: 40px;
     padding: 20px;
     color: white;
-    width: 600px;
     border-radius: 10px;
 }
 hr{
@@ -57,29 +56,30 @@ hr{
 }
 table{
     border-collapse: collapse;
-    width: 58%;
-    margin: auto;
     background-color: rgb(62, 62, 139);
     color: white;
 }
 
  th ,td {
     border: 1px solid rgb(3, 3, 85);
-    padding: 9px;
     text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .keret3{
     background-color: rgb(62, 62, 139);
-    margin: 20px;
+    margin: 50px;
     padding: 20px;
     color: white;
-    width: 600px;
     border-radius: 10px;
 }
 
 .footer{
     background-color: rgb(62, 62, 139);
+    color: white;
 }
 
 .container {
@@ -93,4 +93,41 @@ h5{
 
 
 
+#nbakep{
+    width: 200px;
+    height: 160px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 94px;
+    border-radius: 10px;
+    border: rgb(3, 3, 85) solid 2px;
+}
 
+#fifakep{
+    width: 200px;
+    height: 160px;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 94px;
+    border-radius: 10px;
+    border: rgb(3, 3, 85) solid 2px;
+}
+
+.btn-dark{
+    background-color: rgb(62, 62, 139);
+    width: 250px;
+}
+
+.video{
+    float: right;
+}
+
+.letolt{
+    margin-top: 20px;
+    margin-bottom: 20px;            
+    padding: 20px;                                              
+    background-color: rgb(62, 62, 139);
+    border-radius: 10px;
+}           
