@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Kornél Szabó and other contributors">
+    <title>Grind · Multiuser Games</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha384-5AkRS45j4ukf+JbWAfHL8P4onPA9p0KwwP7pUdjSQA3ss9edbJUJc/XcYAiheSSz"
+    crossorigin="anonymous"></script>
+    <script src="grind.wip.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png"
+    sizes="180x180">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32"
+    type="image/png">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16"
+    type="image/png">
+  <link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg"
+    color="#7952b3">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <meta name="theme-color" content="#7952b3">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    body {
+      background-image: url(./images/background.jpeg);
+      background-size: 1280px;
+    }
+
+    h1 {
+      color: lightgrey;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .meaning {
+      background-color: color-mix(in srgb, white 20%, grey 30%);
+    }
+
+    .szepseg {
+      font-weight: bold;
+      font-size: large;
+      color: black;
+    }
+    fieldset{
+            width: 20%;
+            background-color: aliceblue;
+            color: black;
+        }
+        legend{
+            background-color: aliceblue;
+            border: 1px solid #888888;
+            color: black;
+        }
+        .feher{
+          background-color: white;
+        }
+        .szel{
+          width: 150%;
+          text-align: center;
+        }
+        .feke{
+          color: black;
+        }
+.newsletter {
+padding: 80px 0;
+background: #19beda;
+}
+
+.newsletter .content {
+max-width: 650px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+z-index: 2; }
+.newsletter .content h2 {
+color: #243c4f;
+margin-bottom: 40px; }
+.newsletter .content .form-control {
+height: 50px;
+border-color: #ffffff;
+border-radius:0;
+}
+.newsletter .content.form-control:focus {
+box-shadow: none;
+border: 2px solid #243c4f;
+}
+.newsletter .content .btn {
+min-height: 50px; 
+border-radius:0;
+background: #243c4f;
+color: #fff;
+font-weight:600;
+}
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#looter">Looter shooter játékok</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destiny">Destiny 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#warframe">Warframe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#deeprock">Deep Rock Galactic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#unturned">Unturned</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#borderlands">Bordelands 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#division">Tom Clancy's The Division 2</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <div class="container" data-bs-theme="dark">
+      <h1 id="looter" class="mt-5">Looter shooter játékok</h1>
+      <p class="lead meaning szepseg">A loot and shooter játékok, azaz grindolós játékok lényege minél jobb karakter és
+        csapatfelállítással egyre nagyobb és erősebb ellenfelek legyőzése a zsákmányok érdekében. Így erősödik a
+        karakter
+        hogy mégerősebb ellenfeleket győzhessen le mégjobb zsákmányhoz való hozzáférésért. </p>
+
+      <h1 id="destiny" class="mt-5">Destiny 2</h1>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row justify-content-center g-0">
+          <div class="col-md-5">
+            <img src="./images/28169680598_98f82498bd_b.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">Season of Wish / Új season</h5>
+              <p class="card-text">A Destiny 2-nek új szezonja érkezett, amely a <u>Season of Wish</u>. Ez a <u>Final
+                  Shape</u> kiegészítőjének való előkészülésről szól. Ebben a szezonban a figyelem az Ahamkara,
+                azaz a Kívánságsárkányok felé fordul, és segítségért fordulnak hozzánk. Ám cserébe azt kérik, hogy
+                szerezzük meg az összes elveszett tojásukat, hogy újraéleszthessék hadakozó fajukat.
+                Az egyik új 3 játékos tevékenység a Dreaming City alatt elterülő hatalmas alvilágban zajlik. A cél az,
+                hogy kikerüld a csapdákat, és legyőzd a hatalmas ellenségeket, hogy megszerezzétek Riven, az egyik
+                Ahamkara
+                utolsó, megszennyezetlen tojásait. Cserébe Riven a tizenötödik kívánságot teljesíti.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row justify-content-center g-0">
+          <div class="col-md-5">
+            <img src="./images/activision-destiny-2-bungie-destiny-destiny-2-warmind-warmin.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">A jelenlegi expansion</h5>
+              <p class="card-text">A <u>Lightfall</u> Destiny 2 legújabb expansion-je. Itt meglátogatjuk a Neptunuszt
+                annak
+                érdekében, hogy Calust, az egyik főgonoszt megállítsuk és megmentsük Neptunusz lakosait. Küldetésünk
+                közben viszont rábukkanunk egy új, ez előtt nem ismert erőre, ami a valóságot összetartó szövet. Utunk
+                során elsajátítjuk ezt az erőt, hogy legyőzhessük vele Calust.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row justify-content-center g-0">
+          <div class="col-md-5">
+            <img src="./images/8486223007_970a75601b_b.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">Az előző expansion</h5>
+              <p class="card-text">A <u>Witch Queen</u> volt az előző expansion, ami egy hatalmas siker volt. Sok új
+                tevékenységet és egészséges változtatásokat hozott be a játékba, emellett érdekes módon folytatta a
+                történetet. Kifejezetten pozitívan fogadta a játékosok nagysága. Emellett itt fedték fel a játék új
+                főellenségét, a <u>Witness</u>-t.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="warframe" class="mt-5">Warframe</h1>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row justify-content-center g-0">
+          <div class="col-md-5">
+            <img src="./images/dgisc36-2e74f0b4-169a-4c76-beee-6242452efb76.jpg" class="img-fluid rounded-start"
+              alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">Dante Unbound</h5>
+              <p class="card-text">A Warframe egy ingyenesen játszható, akció-orientált sci-fi szerepjáték (RPG), amit a
+                Digital
+                Extremes fejlesztett és kiadott. A játék jövőbeli időben játszódik, ahol a játékosok a Tenno nevű
+                harcosokként küzdenek különböző frakciók ellen, miközben különböző bolygókon és űrállomásokon
+                kalandoznak.</p>
+              <p class="card-text">
+                A Tenno-k bio-mechanikus harcosok, akiket évszázadokig vagy akár évezredekig is alszanak, majd
+                felébresztik
+                őket, hogy harcoljanak az univerzum fenyegetéseivel szemben.
+              </p>
+              <p class="card-text">
+                A játékosok testre szabhatják saját Tenno-jukat különböző fegyverekkel, páncélzattal és képességekkel,
+                amelyeket a játék során fejleszthetnek és javíthatnak.
+              </p>
+              <p class="card-text">
+                A játék középpontjában a kooperatív többjátékos mód áll, ahol a játékosok csapatot alkotva együtt
+                harcolnak
+                a küldetéseken és az életveszélyes ellenfelek ellen.
+              </p>
+              <p class="card-text">
+                Emellett a játéknak van egy nyílt világú része is, amely lehetővé teszi a játékosoknak, hogy szabadon
+                felfedezzék a különböző bolygókat, részt vegyenek csatákban, és kereskedjenek más játékosokkal.
+              </p>
+              <p class="card-text">
+                A Warframe egy dinamikus és folyamatosan fejlődő játék, amely rendszeresen frissül új tartalommal,
+                küldetésekkel és funkciókkal. A játéknak hatalmas és elkötelezett rajongótábora van, és számos díjat és
+                elismerést nyert a megjelenése óta.
+              </p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="deeprock" class="mt-5">Deep Rock Galactic</h1>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row justify-content-center g-0">
+          <div class="col-md-5">
+            <img src="./images/deep-rock-galactic-peshchera-gnomy-bronia-oruzhie-ogon-obstr.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">PLAGUEFALL / SEASON 3</h5>
+              <p class="card-text">A Deep Rock Galactic egy ingyenesen játszható, akció-orientált sci-fi túlélőjáték,
+                amelyet a
+                Ghost Ship Games fejlesztett és kiadott.</p>
+              <p class="card-text">
+                A játék egy távoli jövőben játszódik, ahol a játékosok a sziklakutatók bőrébe bújva merülnek el az űr
+                mélyén
+                rejtőző veszélyekkel teli barlangrendszerek felfedezésében és felderítésében. A sziklakutatók egy
+                különleges cég alkalmazottai, akiket
+                arra képeztek ki, hogy túléljenek a legveszélyesebb körülmények között is, és szerezzenek be értékes
+                ásványokat és
+                nyersanyagokat a galaktikus kereskedelemhez.
+              </p>
+              <p class="card-text">A játékosok szabadon választhatnak a különböző karakterosztályok közül, és testre
+                szabhatják felszerelésüket
+                és képességeiket annak érdekében, hogy hatékonyan vegyék fel a harcot az űr barlangjaiban élő
+                veszélyekkel.
+              </p>
+              <p class="card-text">A játék legfőbb elemei közé tartozik a kooperatív többjátékos mód,
+                ahol a játékosok csapatot alkotva dolgoznak együtt a túlélésért és a gazdagság megszerzéséért. A Deep
+                Rock
+                Galactic folyamatosan fejlődő játék,
+                amely rendszeresen új tartalmakkal és frissítésekkel szolgál a játékosoknak, hogy mindig új kihívásokkal
+                és
+                kalandokkal szembesüljenek az űr titokzatos mélységeiben.
+              </p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="unturned" class="mt-5">Unturned</h1>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row justify-content-center g-0">
+          <div class="col-md-5">
+            <img src="./images/14516432428_b6f206c4f7_b.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">SEASON 3 / 3.24.1.0 Update</h5>
+              <p class="card-text">Az Unturned egy túlélőjáték, amelyben a játékosok egy poszt-apokaliptikus világban
+                próbálnak
+                túlélni és újraépíteni a civilizációt. Az alábbiakban néhány főbb jellemzőjét emeljük ki:
+                <li>Tartsd távol magad a zombiktól: A játékosoknak meg kell őrizniük emberi állapotukat és el kell
+                  kerülniük a
+                  zombikká válást.</li>
+                <li>Válaszd a taktikát: Lehetőség van akár a frontális támadásra, akár az alattomosabb módszerek
+                  alkalmazására a
+                  túlélés érdekében.</li>
+                <li>Szembenézés a természettel: A játékosoknak nem csak a zombikkal kell megküzdeniük, hanem a természet
+                  kihívásaival is. Gyűjts vad gyümölcsöket, vadászhass állatokra és halássz a túlélés érdekében.</li>
+                <li>Szembeszállás más játékosokkal: Barátokat szerezhetünk vagy ellenfeleket találhatunk online.</li>
+                <li>Segíts a közösség újjáépítésében: Akár offline, akár egyedül játszol, rengeteg teendő vár rád.</li>
+                <li>Erősítsd meg erődödet: Építs erődöt, tárolj és védekezz a zombikkal szemben.</li>
+              </p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="borderlands" class="mt-5">Bordelands 3</h1>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row justify-content-center g-0">
+          <div class="col-md-5">
+            <img src="./images/borderlands_3__red_wallpaper_4k_hd_by_neolinkster_ddgawts-fullview.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">Borderlands Collection: Pandora's Box</h5>
+              <p class="card-text">A Borderlands 3 egy akciódús lövöldözős RPG, amelyet a Gearbox Software fejlesztett
+                és kiadott.
+                A játék a Borderlands sorozat legújabb része, amelyben ismét visszatérünk a Pandora világába és új
+                kalandok
+                várnak ránk. Néhány főbb jellemzője:
+                <li>Felfedezés és akció: Merülj el a Borderlands világában és fedezd fel az új területeket, dungeonokat
+                  és
+                  karaktereket. Légy részese az akciódús lövöldözéseknek és kihívásoknak.</li>
+                <li>Különleges osztályok és képességek: Válassz a különböző osztályok közül, mindegyiknek saját egyedi
+                  képességeivel és felszereléseivel. Fejleszd a karakteredet és alkalmazd a legjobb stratégiát a
+                  harcokban.</li>
+                <li>Kooperatív módban játszható: Csapatban dolgozz együtt barátaiddal és más játékosokkal, hogy
+                  legyőzzétek az
+                  ellenfeleket és teljesítsétek a küldetéseket.</li>
+                <li>Változatos fegyverek és loot: Gyűjtsd össze a legjobb fegyvereket és felszereléseket, hogy még
+                  erősebb
+                  legyél a harcokban. A Borderlands 3 híres a változatos és egyedi fegyverekről, amelyek számos
+                  különleges
+                  képességgel rendelkeznek.</li>
+                <li>Dinamikus világ és történet: Kövesd nyomon a fő történetet és fedezd fel a mellékküldetéseket és
+                  rejtett
+                  titkokat a világban. A Borderlands 3 egy dinamikus és élénk világot kínál, amely folyamatosan változik
+                  és
+                  fejlődik a játékosok döntései alapján.</li>
+              </p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="division" class="mt-5">Tom Clancy's The Division 2</h1>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row justify-content-center g-0">
+          <div class="col-md-5">
+            <img src="./images/tom-clancy-s-the-division-2-game-ubisoft.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">Season 11: Reign of Fire</h5>
+              <p class="card-text">A Division 2 egy online, akció-orientált lövöldözős RPG élmény, ahol a felfedezés és
+                a játékos-fejlődés
+                alapvető fontosságúak. A játékosok egy elit ügynökcsoport tagjaként lépnek be a poszt-pandémiás
+                Washington
+                DC-be, hogy helyreállítsák az rendet és megakadályozzák a város összeomlását.
+              </p>
+              <p class="card-text">A Division 2 a következőket kínálja:
+                <li><b>Szabadítsd fel Washington DC-t:</b> Ments meg egy országot a teljes összeomlás szélén álló
+                  állapotában, miközben
+                  felfedezed egy nyitott, dinamikus és ellenséges világát.</li>
+                <li><b>Erősebb a csapatoddal:</b> Specializálódj és harcolj együtt barátaiddal online kooperatív módban
+                  vagy mások
+                  ellen versenyképes PVP módban.</li>
+                <li><b>Műfaj-definiáló endgame:</b> Válassz egyedi osztály specializációt, hogy a legnehezebb
+                  kihívásokkal szembeszállj
+                  barátaiddal.</li>
+              </p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table class="table table-dark table-striped">
+        <tr>
+          <th colspan="6">Top 5 legjátszottabb looter shooter játékok</th>
+        </tr>
+        <tr>
+          <th>Játékok</th>
+          <th>Destiny 2</th>
+          <th>Warframe</th>
+          <th>Payday 2</th>
+          <th>Unturned</th>
+          <th>Palworld</th>
+        </tr>
+        <tr>
+          <th>Játékosok száma</th>
+          <th>44,8 millió</th>
+          <th>37 millió</th>
+          <th>25,66 millió</th>
+          <th>24 millió</th>
+          <th>19 millió</th>
+        </tr>
+      </table>
+
+      <div class="p-3">
+        <div id="carouselGames" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-5">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" src="./images/activision-destiny-destiny-2-bungie-1.webp"
+                width="800" height="750" role="img" aria-label="Placeholder: First slide"
+                preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#777"></rect>
+                </img>
+            </div>
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" src="./images/deep-rock-galactic-peshchera-gnomy-obstrel-stantsiia-monstry.jpg"
+                width="800" height="750" role="img" aria-label="Placeholder: First slide"
+                preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#777"></rect>
+                </img>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" src="./images/unturned_elver__sacrifice_location_by_mrcarpainter556_de1nvl1-fullview.jpg"
+                width="800" height="750" role="img" aria-label="Placeholder: Second slide"
+                preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#666"></rect>
+                </img>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" src="./images/warframe-voban-ekskalibur.jpg"
+                width="800" height="750" role="img" aria-label="Placeholder: Third slide"
+                preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#555"></rect>
+                </img>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselGames" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselGames" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <table class="table table-dark table-striped">
+        <tr>
+          <th colspan="2"><h3>Források:</h3></th>
+        </tr>
+        <tr>
+          <th colspan="2">GoodFon:</th>
+        </tr>
+        <tr>
+          <th>URL</th>
+          <th>Comment</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-destiny-2-game-destiny-logo.html">https://www.goodfon.com/games/wallpaper-destiny-2-game-destiny-logo.html</a></th>
+          <th><b>Everton</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-destiny-2-concept-work-sooruzhenie.html">https://www.goodfon.com/games/wallpaper-destiny-2-concept-work-sooruzhenie.html</a></th>
+          <th><b>Defotfaith</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-activision-destiny-destiny-2-bungie-1.html">https://www.goodfon.com/games/wallpaper-activision-destiny-destiny-2-bungie-1.html</a></th>
+          <th><b>Devogorin</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-activision-destiny-2-bungie-destiny-destiny-2-warmind-warmin.html">https://www.goodfon.com/games/wallpaper-activision-destiny-2-bungie-destiny-destiny-2-warmind-warmin.html</a></th>
+          <th><b>Devogorin</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-destiny-bungie-splaiser-destiny-2-okhotnik-varlok-titan.html">https://www.goodfon.com/games/wallpaper-destiny-bungie-splaiser-destiny-2-okhotnik-varlok-titan.html</a></th>
+          <th><b>Anon</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-deep-rock-galactic-robot-gnomy-bronia-oruzhie-kirka-monstry.html">https://www.goodfon.com/games/wallpaper-deep-rock-galactic-robot-gnomy-bronia-oruzhie-kirka-monstry.html</a></th>
+          <th><b>Meduzanol</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-deep-rock-galactic-peshchera-gnomy-obstrel-stantsiia-monstry.html">https://www.goodfon.com/games/wallpaper-deep-rock-galactic-peshchera-gnomy-obstrel-stantsiia-monstry.html</a></th>
+          <th><b>Meduzanol</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.ru/games/wallpaper-deep-rock-galactic-peshchera-gnomy-bronia-oruzhie-ogon-obstr.html">https://www.goodfon.ru/games/wallpaper-deep-rock-galactic-peshchera-gnomy-bronia-oruzhie-ogon-obstr.html</a></th>
+          <th><b>Meduzanol</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-warframe-voban-ekskalibur.html">https://www.goodfon.com/games/wallpaper-warframe-voban-ekskalibur.html</a></th>
+          <th><b>Vexels1</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-borderlands-borderlands-3-bl3-mayhem-is-coming-zane-moze-fl4.html">https://www.goodfon.com/games/wallpaper-borderlands-borderlands-3-bl3-mayhem-is-coming-zane-moze-fl4.html</a></th>
+          <th><b>Offtap</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-tom-clancy-s-the-division-2-ubisoft-agenty-voina-art.html">https://www.goodfon.com/games/wallpaper-tom-clancy-s-the-division-2-ubisoft-agenty-voina-art.html</a></th>
+          <th><b>Ruslan66</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-tom-clancy-s-the-division-2-art-soldaty-ubisoft.html">https://www.goodfon.com/games/wallpaper-tom-clancy-s-the-division-2-art-soldaty-ubisoft.html</a></th>
+          <th><b>Ruslan66</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.goodfon.com/games/wallpaper-tom-clancy-s-the-division-2-game-ubisoft.html">https://www.goodfon.com/games/wallpaper-tom-clancy-s-the-division-2-game-ubisoft.html</a></th>
+          <th><b>Dima666666789</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th colspan="2">Flickr:</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.flickr.com/photos/newgamenetwork/8486223007">https://www.flickr.com/photos/newgamenetwork/8486223007</a></th>
+          <th><b>NewGameNetwork</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.flickr.com/photos/stefans02/28169680598">https://www.flickr.com/photos/stefans02/28169680598</a></th>
+          <th><b>Stefans02</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.flickr.com/photos/tamahikari/14516432428">https://www.flickr.com/photos/tamahikari/14516432428</a></th>
+          <th><b>Tamahikari Tammas</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.flickr.com/photos/communitymag/8199298872">https://www.flickr.com/photos/communitymag/8199298872</a></th>
+          <th><b>Community Mag</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.flickr.com/photos/what20/49100451222">https://www.flickr.com/photos/what20/49100451222</a></th>
+          <th><b>Pinli Lin</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th colspan="2">DevianArt:</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.deviantart.com/takaya/art/Garuda-Warframe-fanart-Design-899374829">https://www.deviantart.com/takaya/art/Garuda-Warframe-fanart-Design-899374829</a></th>
+          <th><b>takaya</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.deviantart.com/shyanabanana/art/Warframe-999013938">https://www.deviantart.com/shyanabanana/art/Warframe-999013938</a></th>
+          <th><b>ShyAnaBanana</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.deviantart.com/mrcarpainter556/art/Unturned-Elver-Headlamp-849319720">https://www.deviantart.com/mrcarpainter556/art/Unturned-Elver-Headlamp-849319720</a></th>
+          <th><b>MrCarpainter556</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.deviantart.com/mrcarpainter556/art/Unturned-Elver-Sacrifice-Location-849320101">https://www.deviantart.com/mrcarpainter556/art/Unturned-Elver-Sacrifice-Location-849320101</a></th>
+          <th><b>MrCarpainter556</b> készítőtől</th>
+        </tr>
+        <tr>
+          <th><a target="_blank" href="https://www.deviantart.com/neolinkster/art/Borderlands-3-Red-Wallpaper-4K-HD-813443248">https://www.deviantart.com/neolinkster/art/Borderlands-3-Red-Wallpaper-4K-HD-813443248</a></th>
+          <th><b>Neolinkster</b> készítőtől</th>
+        </tr>
+
+      </table>
+
+      <div class="card bg-dark text-white" style="max-width: 80%;">
+        <img src="./images/28169680598_98f82498bd_b.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Card - Image Source to be displayed</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text">Last updated 3 mins ago</p>
+        </div>
+      </div>
+      <h1>Szét fogunk spamelni</h1>
+      <form class="newsletter" action="javascript:letsgo()">
+        <div class="container">
+        <div class="row">
+        <div class="col-sm-12">
+          <div class="content">
+            <h2>Iratkozóggyon fölfele</h2>
+          <div class="input-group">
+                 <P><input type="email" name="data" id="mail" class="form-control" placeholder="E-mail cím"></P>
+                  <br>
+                 <P><input type="password" name="data" id="pw" class="form-control" placeholder="Jelszó"></P>
+                 <span class="input-group-btn">
+                 <button class="btn" type="submit">Feliratkozás</button>
+                 </span>
+                  </div>
+
+          </div>
+        </div>
+        </div>
+        </div>
+      </form>
+  </div>
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">footer</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
