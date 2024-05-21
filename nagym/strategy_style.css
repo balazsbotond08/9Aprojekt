@@ -1,11 +1,24 @@
 .card-picture {
-    width: 268px;
+    width: auto;
     height: 357.33px;
 }
 
-.card 
+#games
 {
-    margin-left: auto;
+    background-color: aqua;
+    margin: auto;
+}
+
+
+div.container
+{
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;   
+}
+
+.card
+{
+    margin:auto;
 }
 
 #userAgent {

@@ -23,7 +23,7 @@ function cardfunction(hover, game) {
     }
     else if (hover == 2 || hover === undefined) 
     {
-        sel_game.style.background = "rgba(0,0,0,0)";
+        sel_game.style.background = "rgba(255,255,255,1)";
     }
     else if (hover == 3)
     {
