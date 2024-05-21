@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hirlevel.css">
+    <title>Hírlevél Feliratkozás</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Hírlevél feliratkozás</h2>
+        <form id="newsletterForm">
+            <label for="lastname">Vezetéknév:</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="firstname">Keresztnév:</label>
+            <input type="text" id="firstname" name="firstname" required>
+
+            <label for="email">Email cím:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">Feliratkozás</button>
+        </form>
+        <div id="message" class="popup">Köszönjük hogy feliratkozott hírlevelünkre!</div>
+        <div id="overlay" class="overlay"></div>
+    </div>
+
+    <script src="hirlevel.js"></script>
+</body>
+</html>
