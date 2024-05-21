@@ -3,7 +3,6 @@ body{
 }
 
 footer{
-    background-color: gray;
     text-align: center;
     font-size: x-small;
     line-height: 0px;
@@ -22,7 +21,6 @@ footer{
 
 header{
     height: 56px;
-    background-color: black;
 }
 
 .dropdown-menu{
@@ -38,3 +36,12 @@ th{
 .kiemelt{
     font-weight: bold;
 }
+
+.carousel-item{
+    height: 35vw;
+}
+
+@media screen and (min-width: 768px)  {
+    .mobile-break { display: none; }
+}
+

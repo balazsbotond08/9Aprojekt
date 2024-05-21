@@ -21,7 +21,7 @@
 </head>
 <body>
   <!--Header/56px fekete sáv-->
-  <header></header>
+  <header class="bg-secondary"></header>
   <!--Top fixed navbar/Fent fixált navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
@@ -67,11 +67,35 @@
           <a href="#minecraft" class="nav-item nav-link">Minecraft</a>
           <a href="#video" class="nav-item nav-link">Video</a>
           <a href="#sysreq" class="nav-item nav-link">Rendszer követelmény</a>
+          <a href="#hirlevel" class="nav-item nav-link">Hírlevél</a>
         </div>
       </div>
     </div>
   </nav>
+  <!--Carousel/Elcsúszó képek-->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="#"><img src="/img/mcedu1.jpg" class="d-block w-100" alt="Minecraft Education Edition Photo 1"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="#photo2"><img src="/img/mcedu2.jpg" class="d-block w-100" alt="Minecraft Education Edition Photo 2"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="#photo3"><img src="/img/mcedu3.jpg" class="d-block w-100" alt="Minecraft Education Edition Photo 3"></a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
   <!--Szövegi/tartalmi rész-->
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -92,12 +116,12 @@
         <p>Az egyik legkiemelkedőbb tulajdonsága a Minecraft Education Editionnek a diákok kreativitásának és digitális készségeinek fejlesztése. A játék lehetőséget biztosít arra, hogy a tanulók saját világokat építsenek, ösztönözve ezzel a tervezési és problémamegoldó készségeket. A kreativitás és a kollaboráció kulcsfontosságú szerepet játszik ebben a folyamatban, ahogyan a diákok közösen dolgoznak projektjeiken és megoldják a játék által felkínált kihívásokat.</p>
       </div>
       <div class="col-md-4">
-        <img class="mineimg" src="img/mcedu.jpg" alt="Minecraft Education Edition Photo">
+        <img class="mineimg" src="img/mcedu3.jpg" alt="Minecraft Education Edition Photo 3" id="photo3">
       </div>
     </div>
     <div class="row">
       <div class="col-md-4">
-        <img class="mineimg" src="img/mcchemistry.png" alt="Minecraft Education Edition Photo">
+        <img class="mineimg" src="img/mcedu2.jpg" alt="Minecraft Education Edition Photo 2" id="photo2">
       </div>
       <div class="col-md-4">
         <h5>Interaktív Tanulás és Tantárgyak Integrációja</h5>
@@ -118,8 +142,10 @@
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <br>
       </div>
       <div class="col-md-4">
+        <br class="mobile-break">
         <h5>Összegzés</h5>
         <p>A Minecraft Education Edition egy olyan eszköz, amely nemcsak a tanulást teszi izgalmassá és élménnyé, hanem segít a diákoknak kritikus gondolkodásuk és kreativitásuk fejlesztésében is. Rugalmassága és folyamatos fejlődése révén egy olyan platformot nyújt, amely a modern oktatási kihívásokra válaszol, és segíti a tanárokat és diákokat abban, hogy sikeresen navigáljanak a digitális korban.</p>
       </div>
@@ -194,7 +220,7 @@
   </div>
   <br>
   <!--Footer-->
-  <footer id="footer">
+  <footer id="footer" class="bg-secondary">
       <p>A weboldal oktatási céllal jött létre.</p>
       <p>Miskolci SZC Kandó Kálmán Informatikai Technikum tulajdonát képezi.</p>
       <p>Készítette: Fodor Levente Gábor</p>
