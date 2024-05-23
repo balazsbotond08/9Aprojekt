@@ -11,29 +11,58 @@
 
     <!-- Navbár/Sidebar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <button style="margin-right:20px;" class="w3-button w3-xlarge" onclick="sidebar_open()">☰</button>
-          <a class="navbar-brand" href="#"><h1>("Weboldal név")</h1></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="#">PC</a>
-              <a class="nav-link" href="#">XBOX</a>
-              <a class="nav-link" href="#">PlayStation</a>
-              <a class="nav-link" href="#">Nintendo</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Főoldal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <div class="nav-item dropdown"> <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">4 játék</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../balazsa/sport.html">Sport</a></li>
+                <li><a class="dropdown-item" href="../balazsb/balazsb.html">Szimulátor</a></li>
+                <li><a class="dropdown-item" href="../bencs/bencs.html">Akció</a></li>
+                <li><a class="dropdown-item" href="../biro/biro.html">Versenyző</a></li>
+              </ul>
             </div>
+            <div class="nav-item dropdown"> <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">4 játék</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../fodor/fodor.html">Oktató</a></li>
+              <li><a class="dropdown-item" href="../gyenes/gyenes.html">Építős</a></li>
+              <li><a class="dropdown-item" href="../homolya/homolya.html">Platformer</a></li>
+              <li><a class="dropdown-item" href="../kissb/kissb.html">Co-op</a></li>
+            </ul>
+          </div>
+          <div class="nav-item dropdown"> <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">4 játék</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../konya/konya.html">FPS</a></li>
+              <li><a class="dropdown-item" href="../kovacs/weblap/kovacs.html">Ritmus</a></li>
+              <li><a class="dropdown-item" href="../kurucz/codes/kurucz.html">Horror</a></li>
+              <li><a class="dropdown-item" href="../nagym/strategy.html">Stratégia</a></li>
+            </ul>
+          </div>
+          <div class="nav-item dropdown"> <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">4 játék</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../prokop/prokop.html">Logikai</a></li>
+              <li><a class="dropdown-item" href="../soltesz/kaland.html">Kaland</a></li>
+              <li><a class="dropdown-item" href="../solyom/solyom.html">VR</a></li>
+              <li><a class="dropdown-item" href="../szabo/szabo.html">Grind</a></li>
+            </ul>
+          </div>
+              <a href="#bemutatkozas" class="nav-item nav-link">Bemutatkozás</a>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="Sidebar">
         <button onclick="sidebar_close()" class="w3-bar-item w3-large">&times;</button>
         <button onclick="pagefunction(header)" class="w3-bar-item w3-button">Bevezetés</button>
         <button onclick="pagefunction(games)" class="w3-bar-item w3-button">Játékok</button>
-        <button class="w3-bar-item w3-button">(NEM TUDOM MIT IDE DE IGEN!)</button>
+        <button class="w3-bar-item w3-button">[NEM MŰKÖDIK]</button>
       </div>
 
       <!-- Tartalom -->
