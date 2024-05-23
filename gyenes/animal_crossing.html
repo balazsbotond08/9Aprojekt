@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Crossing: New Horizons</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Általános stílusok */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-image: url(hatter.jpg);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigációs sáv */
+    .navbar {
+      background-color: #81d4fa;
+      border-bottom: 2px solid black;
+    }
+
+    .nav-link {
+      color: black !important;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      color: #0288d1 !important;
+    }
+
+    /* Főoldal szekció */
+    .jumbotron {
+      background-color: black;
+      color: #fff;
+      padding: 2rem 1rem;
+      border-radius: 10px;
+    }
+
+    .jumbotron h1 {
+      font-size: 2.5rem;
+    }
+
+    .jumbotron p {
+      font-size: 1.25rem;
+    }
+
+    /* Kártya szekció */
+    .card {
+      margin-bottom: 2rem;
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+
+    .card-title {
+      color: black;
+      font-weight: bold;
+    }
+
+    .card-body h5 {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .card-body table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .card-body th, .card-body td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .card-body th {
+      background-color: black;
+      color: white;
+    }
+    .kategoria{
+      font-weight: bold;
+    }
+    #kiadas{
+      font-style: italic;
+    }
+    </style>
+</head>
+<body>
+  <!-- Navigációs sáv -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="gyenes.html">Főoldal</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Főoldal szekció -->
+  <div class="container mt-5">
+    <div class="jumbotron text-center">
+      <h1>Animal Crossing: New Horizons</h1>
+      <p>Éld az életed egy idilli szigeten, és teremtsd meg a saját paradicsomodat!</p>
+    </div>
+  </div>
+
+  <!-- Játékok szekció -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Animal Crossing: New Horizons Leírás</h5>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Kategória</th>
+              <th>Leírás</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="kategoria">Leírás:</td>
+              <td>
+                Az Animal Crossing: New Horizons egy szimulációs játék, amelyet a Nintendo fejlesztett és adott ki Nintendo Switch konzolra. A játékosok egy elhagyatott szigetre költöznek, ahol saját tempójukban fedezhetik fel és alakíthatják ki az új otthonukat. A játék lehetőséget ad a tárgyak gyűjtésére, építésre, kertészkedésre és a sziget személyre szabására.
+              </td>
+            </tr>
+            <tr>
+              <td class="kategoria">Jellemzők:</td>
+              <td>
+                <ul>
+                  <li>Fedezd fel és alakítsd át a szigetet saját ízlésed szerint.</li>
+                  <li>Gyűjtsd be a természeti erőforrásokat és készíts belőlük különböző tárgyakat.</li>
+                  <li>Interakció más szigetlakókkal és állatokkal.</li>
+                  <li>Online többjátékos mód, ahol barátaiddal együtt fedezheted fel a szigeteket.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="kategoria">Gépigény:</td>
+              <td>
+                Az Animal Crossing: New Horizons a Nintendo Switch konzolon fut, így nincs szükség specifikus PC-s gépigényekre. A játékhoz szükséges:
+                <ul>
+                  <li>Nintendo Switch konzol</li>
+                  <li>Internetkapcsolat az online funkciók használatához</li>
+                  <li>Nintendo Switch Online előfizetés az online többjátékos módhoz</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="kategoria">Kiadási dátum:</td>
+              <td id="kiadas">2020. március 20.</td>
+            </tr>
+            <tr>
+              <td class="kategoria">Fejlesztő és kiadó:</td>
+              <td><a href="https://www.nintendo.com/" target="_blank">Nintendo</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

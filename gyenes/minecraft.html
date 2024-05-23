@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Általános stílusok */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-image: url(hatter.jpg);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigációs sáv */
+    .navbar {
+      background-color: #81d4fa;
+      border-bottom: 2px solid black;
+    }
+
+    .nav-link {
+      color: black !important;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      color: #0288d1 !important;
+    }
+
+    /* Főoldal szekció */
+    .jumbotron {
+      background-color: black;
+      color: #fff;
+      padding: 2rem 1rem;
+      border-radius: 10px;
+    }
+
+    .jumbotron h1 {
+      font-size: 2.5rem;
+    }
+
+    .jumbotron p {
+      font-size: 1.25rem;
+    }
+
+    /* Kártya szekció */
+    .card {
+      margin-bottom: 2rem;
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+
+    .card-title {
+      color: black;
+      font-weight: bold;
+    }
+
+    .card-body h5 {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .card-body table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .card-body th, .card-body td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .card-body th {
+      background-color: black;
+      color: white;
+    }
+    .kategoria{
+      font-weight: bold;
+    }
+    #kiadas{
+      font-style: italic;
+    }
+    </style>
+</head>
+<body>
+  <!-- Navigációs sáv -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="gyenes.html">Főoldal</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Főoldal szekció -->
+  <div class="container mt-5">
+    <div class="jumbotron text-center">
+      <h1>Minecraft</h1>
+      <p>Fedezd fel a végtelen világot és építs bármit, amit csak el tudsz képzelni!</p>
+    </div>
+  </div>
+
+  <!-- Játékok szekció -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Minecraft Leírás</h5>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Kategória</th>
+              <th>Leírás</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="kategoria">Leírás:</td>
+              <td>
+                A Minecraft egy sandbox játék, amelyet a Mojang fejlesztett és adott ki. A játékosok egy véletlenszerűen generált világban mozognak, ahol különböző blokkok segítségével építhetnek, felfedezhetnek és túlélhetnek.
+              </td>
+            </tr>
+            <tr>
+              <td class="kategoria">Jellemzők:</td>
+              <td>
+                <ul>
+                  <li>Építs bármit, amit csak el tudsz képzelni, kockák segítségével.</li>
+                  <li>Fedezd fel a végtelen, véletlenszerűen generált világot.</li>
+                  <li>Készíts eszközöket, építményeket és egyéb tárgyakat a túléléshez.</li>
+                  <li>Játssz egyedül vagy barátaiddal különböző játékmódokban, mint a túlélés, kreatív mód és kaland mód.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="kategoria">Gépigény:</td>
+              <td>
+                A Minecraft gépigényei a platformtól függnek. PC-re az alábbi követelmények szükségesek:
+                <ul>
+                  <li>Operációs rendszer: Windows 10</li>
+                  <li>Processzor: Intel Core i3-3210 vagy AMD A8-7600</li>
+                  <li>Memória: 4 GB RAM</li>
+                  <li>Grafika: Intel HD Graphics 4000 vagy AMD Radeon R5</li>
+                  <li>Tárhely: Legalább 1 GB szabad hely</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="kategoria">Kiadási dátum:</td>
+              <td id="kiadas">2011. november 18.</td>
+            </tr>
+            <tr>
+              <td class="kategoria">Fejlesztő és kiadó:</td>
+              <td><a href="https://www.minecraft.net/en-us" target="_blank">Mojang Studios</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
