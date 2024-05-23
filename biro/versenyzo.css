@@ -6,7 +6,7 @@ body {
 }
 
 .keret {
-  border: 4px solid #303030;
+  border: 2px solid #303030;
   padding: 20px;
   margin: auto;
   background-color: #dbdbdb;
@@ -57,41 +57,7 @@ footer {
   font-weight: bold;
 }
 
-#feliratkozás {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
-.gomb {
-  border: 3px solid #303030;
-  padding: 5px;
-  background-color: white;
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.password {
-  border: 3px solid #303030;
-  padding: 5px;
-  background-color: white;
-  border-radius: 5px;
-  margin-left: 2%;
-  margin-right: auto;
-}
-
-.email {
-  border: 3px solid #303030;
-  padding: 5px;
-  background-color: white;
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .kartya {
-  width: 40%;
   border: 1px solid #303030;
   padding: 10px;
   background-color: #dbdbdb;
@@ -103,7 +69,7 @@ footer {
 }
 
 .button {
-  background-color: gray;
+  background-color: #B8B8B8;
   color: black;
   border: none;
   padding: 7px 20px;
@@ -113,4 +79,7 @@ footer {
   text-align: center;
 }
 
+.hirlevel {
+  color: black;
+}
 
