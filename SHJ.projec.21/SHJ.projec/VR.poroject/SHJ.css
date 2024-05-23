@@ -1,0 +1,80 @@
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+body{
+    background-color: #333;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.keret {
+    margin-top: 150px;
+}
+
+.cim {
+    margin-bottom: 50px;
+}
+
+.kisszoveg {
+    margin-top: 50px;
+}
+
+.kep1 {
+    height: 300px;
+}
+
+.labresz{
+    margin-top: 200px;
+    padding: 25px;
+}
+.fejlec-kep{
+  height: 300px;
+  width: 200px;
+  color: white;
+  text-align: center;
+  background-size: cover;
+}
+.fejlec-kep{
+  background-image: url(section2b-header-image-3.jpg);
+}
+.kando{
+  float: right;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+.kapcsolat{
+  margin-left: 60px;
+}
+.valami{
+margin: 50px;
+}
+.hatter{
+  background-color: none;
+  background-image: url(black-background-08-vecteezy.png);
+}
