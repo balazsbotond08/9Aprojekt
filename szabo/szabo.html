@@ -119,11 +119,10 @@
             </li>
           </ul>
 		  <section class="home-newsletter">
-            <form class="input-group">
-              <input class="form-control" type="email" placeholder="Enter your Email address" aria-label="Email address">
-			  <span class="input-group-btn">
-                <button class="btn btn-theme btn-outline-success" type="submit">Subscribe</button>
-			  </span>
+	        <form class="input-group needs-validation" novalidate>
+              <input id="emailValidation" type="email" class="form-control" placeholder="Enter your Email address" aria-describedby="emailHelp" aria-label="Email address" required>
+              <input id="emailValidation" type="password" class="form-control" placeholder="Enter your password" aria-describedby="emailHelp" aria-label="Email address" required>
+              <button type="button" type="submit" class="btn btn-theme btn-outline-success" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</button>
             </form>
 		  </section>
         </div>
@@ -131,16 +130,31 @@
     </nav>
   </header>
 
+  <!-- Modal -->
+  <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true" data-bs-theme="dark">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="subscribeModalLabel">Subscription Result</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-light">
+          Thank you for your subscription...
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Begin page content -->
   <main class="flex-shrink-0">
+  
     <div class="container" data-bs-theme="dark">
-	  <span id="looter"/><br/><h1 class="mt-5">Looter shooter játékok</h1>
+	  <span id="looter"/><hr/><h1 class="mt-5">Looter shooter játékok</h1>
       <p class="lead meaning szepseg">A loot and shooter játékok, azaz grindolós játékok lényege minél jobb karakter és
         csapatfelállítással egyre nagyobb és erősebb ellenfelek legyőzése a zsákmányok érdekében. Így erősödik a
         karakter
         hogy mégerősebb ellenfeleket győzhessen le mégjobb zsákmányhoz való hozzáférésért. </p>
-        
-      <span id="destiny"/><br/><h1 class="mt-5">Destiny 2</h1>
+      <span id="destiny"/><hr/><h1 class="mt-5">Destiny 2</h1>
       <div class="card mb-3" style="max-width: 100%;">
         <div class="row justify-content-center g-0">
 		  <div class="col-md-5">
@@ -148,46 +162,46 @@
               <div class="carousel-inner rounded-3">
 		        <div class="carousel-item active" data-bs-interval="1777">
 		          <figure class="bsb-overlay-hover">
-    			    <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/destiny_2_001.jpg" alt="Destiny 2">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.flickr.com/photos/newgamenetwork/8486223007" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/destiny_2_001.jpg" alt="Destiny 2">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>NewGameNetwork</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/destiny_2_002.jpg" alt="Destiny 2">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.flickr.com/photos/stefans02/28169680598" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/destiny_2_002.jpg" alt="Destiny 2">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Stefans02</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/destiny_2_003.jpg" alt="Destiny 2">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-activision-destiny-2-bungie-destiny-destiny-2-warmind-warmin.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/destiny_2_003.jpg" alt="Destiny 2">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Devogorin</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
@@ -205,7 +219,8 @@
                 hogy kikerüld a csapdákat, és legyőzd a hatalmas ellenségeket, hogy megszerezzétek Riven, az egyik
                 Ahamkara
                 utolsó, megszennyezetlen tojásait. Cserébe Riven a tizenötödik kívánságot teljesíti.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Destiny 2 kiadási dátuma: 2017. Szeptember 6.</small></p>
+              <p class="card-text"><small class="text-muted">Új szezon kiadási dátuma: 2023. November 28.</small></p>
             </div>
           </div>
         </div>
@@ -218,31 +233,31 @@
               <div class="carousel-inner rounded-3">
 		        <div class="carousel-item active" data-bs-interval="1777">
 		          <figure class="bsb-overlay-hover">
-    			    <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/destiny_2_004.jpg" alt="Destiny 2">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-activision-destiny-destiny-2-bungie-1.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/destiny_2_004.jpg" alt="Destiny 2">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Devogorin</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/destiny_2_005.jpg" alt="Destiny 2">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-destiny-2-concept-work-sooruzhenie.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/destiny_2_005.jpg" alt="Destiny 2">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Defotfaith</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
@@ -257,7 +272,7 @@
                 érdekében, hogy Calust, az egyik főgonoszt megállítsuk és megmentsük Neptunusz lakosait. Küldetésünk
                 közben viszont rábukkanunk egy új, ez előtt nem ismert erőre, ami a valóságot összetartó szövet. Utunk
                 során elsajátítjuk ezt az erőt, hogy legyőzhessük vele Calust.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Lightfall kiadási dátuma: 2023. Február 28.</small></p>
             </div>
           </div>
         </div>
@@ -270,31 +285,31 @@
               <div class="carousel-inner rounded-3">
 		        <div class="carousel-item active" data-bs-interval="1777">
 		          <figure class="bsb-overlay-hover">
-    			    <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/destiny_2_006.jpg" alt="Destiny 2">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-destiny-2-game-destiny-logo.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/destiny_2_006.jpg" alt="Destiny 2">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Everton</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="https://index.hu/" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/destiny_2_007.jpg" alt="Destiny 2">
-                    </a>
-                    <figcaption>
-                      <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Akié a kép</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-destiny-bungie-splaiser-destiny-2-okhotnik-varlok-titan.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/destiny_2_007.jpg" alt="Destiny 2">
+                </a>
+                <figcaption>
+                  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Anon</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
@@ -308,13 +323,13 @@
                 tevékenységet és egészséges változtatásokat hozott be a játékba, emellett érdekes módon folytatta a
                 történetet. Kifejezetten pozitívan fogadta a játékosok nagysága. Emellett itt fedték fel a játék új
                 főellenségét, a <u>Witness</u>-t.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Witch queen kiadási dátuma: 2022. február 22.</small></p>
             </div>
           </div>
         </div>
       </div>
 
-      <span id="warframe"/><br/><h1 class="mt-5">Warframe</h1>
+      <span id="warframe"/><hr/><h1 class="mt-5">Warframe</h1>
       <div class="card mb-3" style="max-width: 100%;">
         <div class="row justify-content-center g-0">
           <div class="col-md-5">
@@ -322,46 +337,46 @@
               <div class="carousel-inner rounded-3">
 		        <div class="carousel-item active" data-bs-interval="1777">
 		          <figure class="bsb-overlay-hover">
-    			    <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/warframe_001.jpg" alt="Warframe">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-warframe-voban-ekskalibur.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/warframe_001.jpg" alt="Warframe">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Vexels1</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="https://index.hu/" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/warframe_002.jpg" alt="Warframe">
-                    </a>
-                    <figcaption>
-                      <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Akié a kép</h4>
+                <a href="https://www.deviantart.com/shyanabanana/art/Warframe-999013938" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/warframe_002.jpg" alt="Warframe">
+                </a>
+                <figcaption>
+                  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>ShyAnaBanana</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="https://index.hu/" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/warframe_003.jpg" alt="Warframe">
-                    </a>
-                    <figcaption>
-                      <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Akié a kép</h4>
+                <a href="https://www.deviantart.com/takaya/art/Garuda-Warframe-fanart-Design-899374829" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/warframe_003.jpg" alt="Warframe">
+                </a>
+                <figcaption>
+                  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>takaya</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
@@ -399,13 +414,13 @@
                 küldetésekkel és funkciókkal. A játéknak hatalmas és elkötelezett rajongótábora van, és számos díjat és
                 elismerést nyert a megjelenése óta.
               </p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Warframe kiadási dátuma: 2013. Március 25.</small></p>
             </div>
           </div>
         </div>
       </div>
 
-      <span id="deeprock"/><br/><h1 class="mt-5">Deep Rock Galactic</h1>
+      <span id="deeprock"/><hr/><h1 class="mt-5">Deep Rock Galactic</h1>
       <div class="card mb-3" style="max-width: 100%;">
         <div class="row justify-content-center g-0">
           <div class="col-md-5">
@@ -413,46 +428,46 @@
               <div class="carousel-inner rounded-3">
 		        <div class="carousel-item active" data-bs-interval="1777">
 		          <figure class="bsb-overlay-hover">
-    			    <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/deep_rock_001.jpg" alt="Deep Rock Galactic">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.ru/games/wallpaper-deep-rock-galactic-peshchera-gnomy-bronia-oruzhie-ogon-obstr.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/deep_rock_001.jpg" alt="Deep Rock Galactic">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Meduzanol</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/deep_rock_002.jpg" alt="Deep Rock Galactic">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-deep-rock-galactic-peshchera-gnomy-obstrel-stantsiia-monstry.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/deep_rock_002.jpg" alt="Deep Rock Galactic">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Meduzanol</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/deep_rock_003.jpg" alt="Deep Rock Galactic">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-deep-rock-galactic-robot-gnomy-bronia-oruzhie-kirka-monstry.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/deep_rock_003.jpg" alt="Deep Rock Galactic">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Meduzanol</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
@@ -487,13 +502,13 @@
                 és
                 kalandokkal szembesüljenek az űr titokzatos mélységeiben.
               </p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Deep Rock Galactic kiadási dátuma: 2020. Május 13.</small></p>
             </div>
           </div>
         </div>
       </div>
 
-      <span id="unturned"/><br/><h1 class="mt-5">Unturned</h1>
+      <span id="unturned"/><hr/><h1 class="mt-5">Unturned</h1>
       <div class="card mb-3" style="max-width: 100%;">
         <div class="row justify-content-center g-0">
           <div class="col-md-5">
@@ -501,46 +516,46 @@
               <div class="carousel-inner rounded-3">
 		        <div class="carousel-item active" data-bs-interval="1777">
 		          <figure class="bsb-overlay-hover">
-    			    <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/unturned_001.jpg" alt="Unturned">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.flickr.com/photos/tamahikari/14516432428" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/unturned_001.jpg" alt="Unturned">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Tamahikari Tammas</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/unturned_002.jpg" alt="Unturned">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.deviantart.com/mrcarpainter556/art/Unturned-Elver-Headlamp-849319720" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/unturned_002.jpg" alt="Unturned">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>MrCarpainter556</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/unturned_003.jpg" alt="Unturned">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.deviantart.com/mrcarpainter556/art/Unturned-Elver-Sacrifice-Location-849320101" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/unturned_003.jpg" alt="Unturned">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>MrCarpainter556</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
@@ -566,13 +581,13 @@
                 <li>Segíts a közösség újjáépítésében: Akár offline, akár egyedül játszol, rengeteg teendő vár rád.</li>
                 <li>Erősítsd meg erődödet: Építs erődöt, tárolj és védekezz a zombikkal szemben.</li>
               </p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Unturned kiadási dátuma: 2014. Július 7.</small></p>
             </div>
           </div>
         </div>
       </div>
 
-      <span id="borderlands"/><br/><h1 class="mt-5">Bordelands 3</h1>
+      <span id="borderlands"/><hr/><h1 class="mt-5">Bordelands 3</h1>
       <div class="card mb-3" style="max-width: 100%;">
         <div class="row justify-content-center g-0">
           <div class="col-md-5">
@@ -580,46 +595,46 @@
               <div class="carousel-inner rounded-3">
 		        <div class="carousel-item active" data-bs-interval="1777">
 		          <figure class="bsb-overlay-hover">
-    			    <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/borderlands_3_001.jpg" alt="Bordelands">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.flickr.com/photos/communitymag/8199298872" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/borderlands_3_001.jpg" alt="Bordelands">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Community Mag</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/borderlands_3_002.jpg" alt="Bordelands">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.deviantart.com/neolinkster/art/Borderlands-3-Red-Wallpaper-4K-HD-813443248" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/borderlands_3_002.jpg" alt="Bordelands">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Neolinkster</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/borderlands_3_003.jpg" alt="Bordelands">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-borderlands-borderlands-3-bl3-mayhem-is-coming-zane-moze-fl4.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/borderlands_3_003.jpg" alt="Bordelands">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Offtap</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
@@ -654,13 +669,13 @@
                   és
                   fejlődik a játékosok döntései alapján.</li>
               </p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Borderlands 2 kiadási dátuma: 2019. szeptember 13.</small></p>
             </div>
           </div>
         </div>
       </div>
 
-      <span id="division"/><br/><h1 class="mt-5">Tom Clancy's The Division 2</h1>
+      <span id="division"/><hr/><h1 class="mt-5">Tom Clancy's The Division 2</h1>
       <div class="card mb-3" style="max-width: 100%;">
         <div class="row justify-content-center g-0">
           <div class="col-md-5">
@@ -668,61 +683,61 @@
               <div class="carousel-inner rounded-3">
 		        <div class="carousel-item active" data-bs-interval="1777">
 		          <figure class="bsb-overlay-hover">
-    			    <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/division_2_001.jpg" alt="Division 2">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.flickr.com/photos/what20/49100451222" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/division_2_001.jpg" alt="Division 2">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Pinli Lin</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/division_2_002.jpg" alt="Division 2">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-tom-clancy-s-the-division-2-art-soldaty-ubisoft.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/division_2_002.jpg" alt="Division 2">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Ruslan66</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/division_2_003.jpg" alt="Division 2">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-tom-clancy-s-the-division-2-game-ubisoft.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/division_2_003.jpg" alt="Division 2">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Dima666666789</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
                 <div class="carousel-item" data-bs-interval="1777">
 	  		      <figure class="bsb-overlay-hover">
-			        <a href="#!" target="_blank">
-                      <img class="w-100" loading="lazy" src="./images/division_2_004.jpg" alt="Division 2">
-                    </a>
-                    <figcaption>
-					  <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image</h4>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                      </svg>
-                      <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
+                <a href="https://www.goodfon.com/games/wallpaper-tom-clancy-s-the-division-2-ubisoft-agenty-voina-art.html" target="_blank">
+                  <img class="w-100" loading="lazy" src="./images/division_2_004.jpg" alt="Division 2">
+                </a>
+                <figcaption>
+        <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Original Image is from <u>Ruslan66</u></h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
+                  </svg>
+                  <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
                     </figcaption>
                   </figure>
                 </div>
@@ -749,7 +764,7 @@
                   kihívásokkal szembeszállj
                   barátaiddal.</li>
               </p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Tom Clancy's The Division 2 kiadási dátuma: 2019. Március 15.</small></p>
             </div>
           </div>
         </div>
@@ -776,93 +791,7 @@
           <th>19 millió</th>
         </tr>
       </table>
-
-      <!--div class="p-3">
-        <div id="carouselDestiny" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner rounded-5">
-		    <div class="carousel-item active" data-bs-interval="500">
-		    <figure class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 bsb-overlay-hover">
-			  <a href="#!" target="_blank">
-                <img class="d-block w-100 img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./images/destiny_2_001.jpg" alt="Destiny 2">
-              </a>
-              <figcaption>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                </svg>
-                <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
-              </figcaption>
-            </figure>
-			</div>
-            <div class="carousel-item" data-bs-interval="500">
-			<figure class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 bsb-overlay-hover">
-			  <a href="#!" target="_blank">
-                <img class="d-block w-100 img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./images/Destiny_2_002.jpg" alt="Destiny 2">
-              </a>
-              <figcaption>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-                </svg>
-                <h4 class="h6 text-white bsb-hover-fadeInDown mt-2">Read More</h4>
-              </figcaption>
-            </figure>
-            </div>
-          </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestiny" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselDestiny" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-
-        <div id="carouselGames" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner rounded-5">
-			<div class="carousel-item active" data-bs-interval="500">
-              <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" src="./images/division_2_002.jpg"
-                width="800" height="750" role="img" aria-label="Placeholder: First slide"
-                preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First
-                  slide</text>
-                </img>
-            </div>
-            <div class="carousel-item" data-bs-interval="500">
-              <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" src="./images/division_2_003.jpg"
-                width="800" height="750" role="img" aria-label="Placeholder: Second slide"
-                preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second
-                  slide</text>
-                </img>
-            </div>
-            <div class="carousel-item" data-bs-interval="500">
-              <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" src="./images/division_2_004.jpg"
-                width="800" height="750" role="img" aria-label="Placeholder: Third slide"
-                preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third
-                  slide</text>
-                </img>
-            </div>
-          </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselGames" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselGames" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div-->
-
-
+      
     </div>
   </main>
 
@@ -871,12 +800,40 @@
     This page has been prepared for education purposes by pupils of&nbsp;<a href="https://www.kkszki.hu/" target="_blank">Miskolci SZC Kandó Kálmán Informatikai Technikum</a>
 	</div>
   </footer>
-
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+	
+  <!--script src="https://getbootstrap.com/docs/5.3/assets/js/validate-forms.js"></script-->
 
+  <!-- --><script type="text/javascript">
+(() => {
+  'use strict'
 
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+	  alert(form.classList);
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      form.classList.add('was-validated')
+    }, false)
+
+   document.getElementById('subscribeModal').addEventListener('show.bs.modal', event => {
+    if (!form.checkValidity()) {
+	  event.preventDefault();
+	  form.classList.add('was-validated');
+	}
+  });
+  });
+})()
+  </script> <!-- -->
 </body>
 
 </html>
