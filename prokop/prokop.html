@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PC-s Stratégiai Játékok</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Stratégiai Játékok</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#fooldal">Főoldal <span class="sr-only">(aktuális)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#jatekok">Játékok</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#feliratkozas">Feliratkozás</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 id="fooldal" class="text-center">PC-s Stratégiai Játékok</h1>
+        <p class="lead text-center font-weight-bold">A stratégiai játék egy videójáték-műfaj,
+            amelyhez <u>gondolkodás</u> és <u>megfontolt tervezés</u>
+            szükséges a győzelem eléréséhez. A taktikai és
+            stratégiai kihívások hangsúlyozottak. A
+            játékmenet alapján négy fő típusba sorolható:
+            valós idejű vagy körökre osztott, valamint
+            stratégiai vagy taktikai készségeket igényel.</p>
+        
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img id="jatekok" src="Human fall flat.jpg" class="card-img-top" alt="Játék 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-center"><u>Human Fall Flat</u></h5>
+                        <p class="card-text">A Human: Fall Flat egy logikai játék, ahol a játékosok Bob nevű testreszabható karaktert irányítanak. Bob egy egyszerű ember, aki tárgyakat foghat meg és sziklákon mászhat. Bár Bob alapvetően fehér és jellegtelen, a játékosok színezhetik és jelmezekbe öltöztethetik őt. A játék nyitott világú, minden szint más témával és többféle megoldási lehetőséggel rendelkezik. Oktatóvideók segítenek a játékosoknak a játékmenet elsajátításában és a rejtvények megoldásában.</p>
+                        <a href="human_fall_flat.html" class="btn btn-primary">Részletek</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Portal 2.jpg" class="card-img-top" alt="Játék 2">
+                    <div class="card-body">
+                        <h5 class="card-title text-center"><u>Portal 2</u></h5>
+                        <p class="card-text">A Portal 2 az eredeti Portal díjnyertes játékmenetét, történetét és zenéjét kínálja, új karakterekkel, friss rejtvényekkel és több tesztkamrával. Az egyjátékos mód az Aperture Science Laboratory új területeit fedezi fel, és újra találkozunk GLaDOS-szal. A kétjátékos együttműködő mód saját történettel, tesztkamrákkal és karakterekkel rendelkezik, ami közös cselekvést és gondolkodást igényel. A játék fejlett fizikát és eredeti zenét tartalmaz, és szerkesztőeszközöket is kínál.</p>
+                        <a href="portal.html" class="btn btn-primary">Részletek</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="total_war.png" class="card-img-top" alt="Játék 3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center "><u>Total War: Three Kingdoms</u></h5>
+                        <p class="card-text">A Total War: Three Kingdoms a híres Total War sorozat része, amely Kína három királyságának korszakában játszódik. A játék ötvözi a valós idejű taktikai csatákat és a körökre osztott stratégiai térképet, ahol a játékosok hadseregeket irányítanak és birodalmakat építenek.</p>
+                        <a href="total_war.html" class="btn btn-primary">Részletek</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white mt-5 p-4 text-center">
+        
+        <div class="container mt-5">
+            <h2 class="mb-4"></h2>
+            <table class="table ">
+                <thead>
+                    <tr>
+                        <th><div class="container mt-5">
+                            <h1>Feliratkozás</h1>
+                            <form id="subscriptionForm">
+                                <div class="form-group">
+                                    <label for="email">Email cím:</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Jelszó:</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary" id="feliratkozas">Feliratkozás</button>
+                            </form>
+                        </div>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="successModalLabel">Sikeres feliratkozás</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Bezárás">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Sikeresen feliratkoztál az oldalra!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezárás</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></th>
+                        <th class="kozep"><h1>Elérhetőség</h1>
+                            
+                            <h2>+36307928727</h2>
+                            
+                            <h2><a href="https://www.instagram.com/prokop.levente/?next=%2F" target="_blank">instagram</a></h2>
+                            <a href="https://www.kkszki.hu"><img src="kando_logo.png" alt=""></a>
+                        </th>
+                        
+                    </tr>
+                </thead>
+                
+            </table>
+        </div>
+        <h2>Készítette: Prokop János Levente</h2>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+        
+            if (email && password) {
+                $('#successModal').modal('show');
+            } else {
+                alert('Kérlek, töltsd ki az összes mezőt!');
+            }
+        });
+        </script>
+</body>
+</html>
