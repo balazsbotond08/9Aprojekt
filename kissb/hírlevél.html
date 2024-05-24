@@ -48,6 +48,11 @@
 
         <label for="email">Email cím:</label><br />
         <input type="email" id="email" name="email" required /><br /><br />
+
+        <!-- Checkbox az adatvédelmi szabályzat elfogadásához -->
+        <input type="checkbox" id="adatvedelem" name="adatvedelem" required />
+        <label for="adatvedelem">Elfogadom az adatvédelmi szabályzatot</label><br /><br />
+
         <div class="text-center">
           <button type="submit" value="Feliratkozás" class="btn">
             <a class="btn btn-dark" style="text-align: center">Feliratkozás</a>
@@ -66,10 +71,11 @@
       function validateForm() {
         var vezeteknev = document.getElementById("vezeteknev").value;
         var keresztnev = document.getElementById("keresztnev").value;
-      
+        var email = document.getElementById("email").value;
+        var adatvedelemChecked = document.getElementById("adatvedelem").checked;
 
-        if (vezeteknev == "" || keresztnev == "" || email == "") {
-          alert("Kérjük, töltse ki az összes mezőt!");
+        if (vezeteknev == "" || keresztnev == "" || email == "" || !adatvedelemChecked) {
+          alert("Kérjük, töltse ki az összes mezőt, és fogadja el az adatvédelmi szabályzatot!");
           return false;
         }
         alert("Köszönjük, hogy feliratkozott a hírlevelünkre!");
