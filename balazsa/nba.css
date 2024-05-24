@@ -40,7 +40,8 @@ li a:hover {
 hr{
     color: white;
     width: 90%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .keret{
@@ -49,27 +50,21 @@ hr{
     border-radius: 10px;
 }
 
-#video1{
-    padding-top: 20px;
-}
-
-#elsoresz{
-    padding-left: 20px;
-    margin-top: 10px;
-}
-
 .masodikresz1{
     padding-left: 10px;
     padding-right: 5px;
+    padding-top: 10px;
 }
 
 .masodikresz2{
     padding-right: 5px;
     padding-left: 5px;
+    padding-top: 10px;
 }
 
 #video2{
-    padding-left: 2px;
+    padding-top: 10px;
+    margin: auto;
 }
 
 .harmadikresz1{
@@ -78,9 +73,13 @@ hr{
 
 .harmadikresz2{
     padding-top: 20px;
-    padding-right: 35px;
+    padding-left: 70px;
 }
 
 .harmadikresz3{
+    padding-top: 40px;
+}
+
+#video3{
     padding-top: 40px;
 }
