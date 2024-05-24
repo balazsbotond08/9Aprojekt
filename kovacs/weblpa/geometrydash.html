@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="osu.css">
+    <title>Geometry Dash - Az ugrálós platformer</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="kovacs.html">Bevezető</a>
+        <a href="Osu!.html">Osu!</a>
+        <a href="geometrydash.html">Geometry dash</a>
+        <a href="taiko.html">Taiko no Tatsujin: Drum Session</a>
+        <a href="musedash.html">Muse dash</a>
+    </div><br>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Geometry Dash - Az ugrálós platformer</h1>
+                <p class="lead">Geometry Dash egy dinamikus ugrálós platformer játék, amelyet RobTop Games fejlesztett és 2013-ban jelent meg. A játék egyedi stílusa, gyors tempója és kihívásai miatt világszerte népszerűvé vált.</p>
+                
+                <h2>Játékmenet</h2>
+                <p>A Geometry Dash játékmódja egyszerű, de nagyon addiktív. A játékosoknak a képernyőn megjelenő geometriai akadályokat kell kikerülniük és ugrálniuk kell, miközben a zene ritmusára haladnak előre. A játék folyamatosan változó pályái és kihívásai miatt minden egyes út egyedi élményt nyújt.</p>
+
+                <div id="palyak-es-szintek" class="mt-5 container">
+                    <h2 class="text-center">Pályák és szintek</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-3">
+                            <div class="card mb-4">
+                                <img height="140px" src="stereomadness.jpg" class="card-img-top" alt="Pálya 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stereo Madness</h5>
+                                    <p class="card-text">"Stereo Madness" az első pálya a Geometry Dash játékban, amely egy könnyű bevezetést nyújt a játékmenethez, és ikonikus zenei aláfestéssel rendelkezik.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-4">
+                                <img src="bloodbath.jpg" class="card-img-top" alt="Pálya 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bloodbath</h5>
+                                    <p class="card-text">"Bloodbath" az egyik leghírhedtebb és legnehezebb pálya a Geometry Dash-ben, melyet sokan a legkeményebb kihívásnak tartanak a játékban.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <h2>Közösség és ranglisták</h2>
+                <p>Geometry Dash közössége aktív és elkötelezett. A játékosok online ranglistákon versenyeznek, saját szinteket osztanak meg és kihívásokat állítanak egymásnak a legjobb eredményekért.</p>
+                <p><h2>Legjobb játékosok</h2>
+                    <ul>
+                        <li>#1 Zoink - 22400</li>
+                        <li>#2 Trick - 18736</li>
+                        <li>#3 wPopoff - 13085</li>
+                        <li>#4 Thnnder - 12973</li>
+                        <li>#5 Doggie - 10572</li>
+                    </ul></p>
+                <h2>Követelmények</h2>
+                <p>A játék viszonylag alacsony rendszerkövetelményekkel rendelkezik, így a legtöbb számítógépen zökkenőmentesen fut. Elérhető Windows, macOS, Android és iOS platformokra.</p>
+
+                <h2>Letöltés és telepítés</h2>
+                <p>Geometry Dash ingyenesen letölthető az alkalmazás áruházakból, és könnyen telepíthető. Egyszerű felhasználói felülettel rendelkezik, amely lehetővé teszi a gyors indulást.</p>
+
+                <p>Merülj el a Geometry Dash izgalmas világában, és élvezd az ugrálós platformer játék élményét!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center">Hírlevél feliratkozás</h2>
+                <form id="newsletterForm">
+                    <div class="form-group">
+                        <label for="name">Név:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail cím:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Feliratkozás</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+    
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+    
+            if (name && email) {
+                alert("Köszönjük, hogy feliratkoztál!");
+            } else {
+                alert("Kérjük, töltsd ki minden mezőt!");
+            }
+        });
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
