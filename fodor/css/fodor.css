@@ -28,8 +28,6 @@ header{
 }
 
 th{
-    width: 33.3vw;
-    text-align: center;
     font-weight: normal;
 }
 
@@ -45,3 +43,17 @@ th{
     .mobile-break { display: none; }
 }
 
+.kozepke{
+    text-align: center; 
+    width: 10vw;
+}
+
+.jobb{
+    text-align: left;
+    width: 45vw;
+}
+
+.bal{
+    text-align: right;
+    width: 45vw;
+}
