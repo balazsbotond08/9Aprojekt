@@ -36,6 +36,10 @@ hr{
     margin-left: auto;
 }
 
+h3{
+    padding-top: 5px;
+}
+
 .keret{
     background-color: rgb(62, 62, 139);
     color: white;
