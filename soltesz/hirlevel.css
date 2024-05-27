@@ -27,6 +27,10 @@ button {
     cursor: pointer;
     width: 100%;
 }
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
 .popup {
     display: none;
     position: fixed;

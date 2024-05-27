@@ -12,3 +12,9 @@ document.getElementById('newsletterForm').addEventListener('submit', function(ev
       window.location.href = 'kaland.html';
   }, 2000); 
 });
+
+function toggleButton() {
+  const checkBox = document.getElementById('privacy-policy');
+  const submitButton = document.getElementById('submit-button');
+  submitButton.disabled = !checkBox.checked;
+}

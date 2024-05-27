@@ -18,13 +18,18 @@
 
             <label for="email">Email cím:</label>
             <input type="email" id="email" name="email" required>
+
+            <div class="form-group">
+                <input type="checkbox" id="privacy-policy" onclick="toggleButton()">
+                <label for="privacy-policy">Elfogadom az adatvédelmi szabályzatot.</label>
+            </div>
             
-            <button type="submit">Feliratkozás</button>
+            <button type="submit" id="submit-button" disabled>Feliratkozás</button>
         </form>
-        <div id="message" class="popup">Köszönjük hogy feliratkozott hírlevelünkre!</div>
+        <div id="message" class="popup">Köszönjük, hogy feliratkozott hírlevelünkre!</div>
         <div id="overlay" class="overlay"></div>
     </div>
 
-    <script src="hirlevel.js"></script>
+<script src="hirlevel.js"></script>
 </body>
 </html>
