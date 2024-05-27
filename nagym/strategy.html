@@ -10,9 +10,9 @@
 <body onload="pagefunction(header)">
 
     <!-- Navbár/Sidebar -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
+        <button onclick="sidebar_open()" class="w3-bar-item w3-large">&times;</button>
         <a class="navbar-brand" href="#">Főoldal</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,14 +55,15 @@
               <a href="#bemutatkozas" class="nav-item nav-link">Bemutatkozás</a>
           </div>
         </div>
-      </div>
-    </nav>
+        </div>
+      </nav>
+    
 
-    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:block" id="Sidebar">
-        <button onclick="sidebar_close()" class="w3-bar-item w3-large">&times;</button>
-        <button onclick="pagefunction(header)" class="w3-bar-item w3-button">Bevezetés</button>
-        <button onclick="pagefunction(games)" class="w3-bar-item w3-button">Játékok</button>
-        <button class="w3-bar-item w3-button">[NEM MŰKÖDIK]</button>
+    <div class="sidebar bar-block border-right" style="display:none" id="Sidebar">
+        <button onclick="sidebar_close()" class="bar-item large button">&times;</button>
+        <button onclick="pagefunction(header)" class="bar-item button">Bevezetés</button>
+        <button onclick="pagefunction(games)" class="bar-item button">Játékok</button>
+        <button class="bar-item button">[NEM MŰKÖDIK]</button>
       </div>
 
       <!-- Tartalom -->
@@ -267,10 +268,8 @@
       </div>
     </div>
   </div>
-  <div class="container my-5 col-sm-12">
-
-    <footer class="bg-dark text-center text-lg-start text-white">
-      <div class="container p-4">
+    <footer class="container-fluid bg-dark text-center text-lg-start text-white col-sm-12">
+      <div class="footer-div container-fluid p-4">
         <div class="row mt-4">
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">A Játékok weboldalai</h5>
@@ -359,10 +358,9 @@
         </div>
       </div>
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        2024 Tanulmányi célokból létrejött weboldal 
+        2024 Tanulmányi célokból létrehozott weboldal! 
       </div>
     </footer>
-  </div>
 
     <div class="modal" id="hirlevel_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
