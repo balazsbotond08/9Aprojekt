@@ -79,17 +79,8 @@ body{
     z-index: 1;
 
 }
-
-video{
-    max-width: 600px;
-}
-
-.videobal{
-    float: left;
-}
-
-.videojobb{
-    float: right;
+#myCheckbox{
+    margin-left: 25%;
 }
 
 #navdiv nav a:nth-child(1):hover~span{
