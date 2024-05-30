@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="strategy_style.css">
 </head>
 <body onload="pagefunction(header)">
-
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
     <!-- Navbár/Sidebar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <button onclick="sidebar_open()" class="w3-bar-item w3-large">&times;</button>
+        <button onclick="sidebar_open()" class="w3-bar-item w3-large">&equiv;</button>
         <a class="navbar-brand" href="#">Főoldal</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,35 +62,26 @@
     
 
     <div class="sidebar bar-block border-right" style="display:none" id="Sidebar">
-        <button onclick="sidebar_close()" class="bar-item large button">&times;</button>
+        <button style="font-weight: bold;" onclick="sidebar_close()" class="bar-item large button">&times;</button>
         <button onclick="pagefunction(header)" class="bar-item button">Bevezetés</button>
         <button onclick="pagefunction(games)" class="bar-item button">Játékok</button>
         <button class="bar-item button">[NEM MŰKÖDIK]</button>
       </div>
 
       <!-- Tartalom -->
-      <div id="header">
+      <div class="site" id="header">
         <h2 style="text-align: center;">Stratégia</h2>
         <div class="szoveg">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus eget diam eleifend rutrum. Proin nisi libero, laoreet a porta in, fringilla feugiat justo. Aliquam sed laoreet magna, eu porttitor magna. Cras convallis dignissim elit, sed accumsan libero vehicula non. Cras nibh enim, varius nec placerat in, venenatis eget sem. Sed lobortis purus ut massa porta pharetra. Vivamus convallis purus libero, et cursus metus faucibus non.</p>
+            <p>A stratégiai játékok olyan videojátékok, amelyekben a játékosoknak stratégiai döntéseket kell hozniuk a játékmenet során annak érdekében, hogy elérjék a győzelmet. Ezek a játékok általában nagyobb hangsúlyt fektetnek a gondolkodásra, tervezésre, erőforrások kezelésére és taktikai stratégiák kialakítására. A stratégiai játékok különböző altípusokba sorolhatók, például valós idejű stratégiai játékok (RTS), körökre osztott stratégiai játékok (TBS) vagy építkező stratégiai játékok. Ezek a játékok nemcsak szórakoztató kihívást jelentenek, hanem fejleszthetik a játékosok kreativitását, problémamegoldó képességét és stratégiai gondolkodását is.</p>
 
-            <p>Mauris imperdiet turpis eget nibh iaculis tincidunt. Phasellus varius lorem vel mauris vehicula pulvinar. In nunc lacus, congue ut metus eu, pulvinar congue nunc. Aliquam ac metus elementum, bibendum ipsum at, lobortis velit. Integer nisi dolor, commodo in ipsum sed, viverra tincidunt purus. Ut bibendum cursus leo, nec venenatis nisi commodo ut. Aliquam luctus nisl et mi pharetra, sed interdum est facilisis. Mauris dui est, ultricies sed euismod id, egestas vitae erat.</p>
-            
-            <p>Phasellus pellentesque, neque et fermentum pretium, arcu massa gravida nisi, eget ultrices mauris ante in nisi. Phasellus fermentum sem eu massa molestie sagittis. Maecenas mattis facilisis tellus accumsan porttitor. Praesent vitae eros lobortis tortor congue porta eu eu odio. Sed efficitur condimentum semper. Fusce auctor porttitor auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse eget faucibus lectus. Aliquam in lectus iaculis, vestibulum enim vitae, lobortis neque. Pellentesque rutrum mollis sapien at laoreet. Sed in sapien in eros volutpat mollis ac at turpis.</p>
-            
-            <p>In facilisis libero nec faucibus mattis. Proin et vulputate diam. Aenean volutpat et felis id pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse maximus tincidunt ante quis vestibulum. In accumsan erat in libero tempor, quis vehicula nulla porta. Etiam consequat felis et mi finibus, vel tincidunt nisl auctor. Integer varius metus non diam ullamcorper tincidunt vitae venenatis elit. Nulla eget arcu eget lacus consectetur pharetra nec quis nisi. Etiam commodo risus sit amet leo interdum vehicula. Duis sit amet fermentum tortor, vel scelerisque neque.</p>
-            
-            <p>Nam posuere lacus vel elementum malesuada. Sed gravida vestibulum est vel vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sapien felis, gravida vel sodales tincidunt, elementum eget dui. Proin eu orci id massa egestas pulvinar. Sed commodo ultricies nibh ut facilisis. Nam ullamcorper nec justo ut ultrices. Vivamus vel sem ipsum. In at magna mauris. Aenean rutrum lobortis vestibulum. Vestibulum facilisis magna vel odio tristique, et bibendum ipsum posuere. Ut molestie gravida risus, eget cursus velit sodales non. Nam luctus aliquam ipsum a semper.</p>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus eget diam eleifend rutrum. Proin nisi libero, laoreet a porta in, fringilla feugiat justo. Aliquam sed laoreet magna, eu porttitor magna. Cras convallis dignissim elit, sed accumsan libero vehicula non. Cras nibh enim, varius nec placerat in, venenatis eget sem. Sed lobortis purus ut massa porta pharetra. Vivamus convallis purus libero, et cursus metus faucibus non.</p>
-
-            <p>Mauris imperdiet turpis eget nibh iaculis tincidunt. Phasellus varius lorem vel mauris vehicula pulvinar. In nunc lacus, congue ut metus eu, pulvinar congue nunc. Aliquam ac metus elementum, bibendum ipsum at, lobortis velit. Integer nisi dolor, commodo in ipsum sed, viverra tincidunt purus. Ut bibendum cursus leo, nec venenatis nisi commodo ut. Aliquam luctus nisl et mi pharetra, sed interdum est facilisis. Mauris dui est, ultricies sed euismod id, egestas vitae erat.</p>
-            
-            <p>Phasellus pellentesque, neque et fermentum pretium, arcu massa gravida nisi, eget ultrices mauris ante in nisi. Phasellus fermentum sem eu massa molestie sagittis. Maecenas mattis facilisis tellus accumsan porttitor. Praesent vitae eros lobortis tortor congue porta eu eu odio. Sed efficitur condimentum semper. Fusce auctor porttitor auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse eget faucibus lectus. Aliquam in lectus iaculis, vestibulum enim vitae, lobortis neque. Pellentesque rutrum mollis sapien at laoreet. Sed in sapien in eros volutpat mollis ac at turpis.</p>
-            
-            <p>In facilisis libero nec faucibus mattis. Proin et vulputate diam. Aenean volutpat et felis id pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse maximus tincidunt ante quis vestibulum. In accumsan erat in libero tempor, quis vehicula nulla porta. Etiam consequat felis et mi finibus, vel tincidunt nisl auctor. Integer varius metus non diam ullamcorper tincidunt vitae venenatis elit. Nulla eget arcu eget lacus consectetur pharetra nec quis nisi. Etiam commodo risus sit amet leo interdum vehicula. Duis sit amet fermentum tortor, vel scelerisque neque.</p>
-            
-            <p>Nam posuere lacus vel elementum malesuada. Sed gravida vestibulum est vel vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sapien felis, gravida vel sodales tincidunt, elementum eget dui. Proin eu orci id massa egestas pulvinar. Sed commodo ultricies nibh ut facilisis. Nam ullamcorper nec justo ut ultrices. Vivamus vel sem ipsum. In at magna mauris. Aenean rutrum lobortis vestibulum. Vestibulum facilisis magna vel odio tristique, et bibendum ipsum posuere. Ut molestie gravida risus, eget cursus velit sodales non. Nam luctus aliquam ipsum a semper.</p>
+            <p>Sokféle témában elérhetők, legyen szó történelmi csatákról, űrhajókról, fantasy világokról vagy akár városépítésről. Ezek a játékok gyakran kihívást jelentenek a játékosoknak abban, hogy miként használják fel az elérhető erőforrásokat, hogyan fejlesszék ki saját stratégiáikat és hogyan alkalmazzák azokat a legjobb eredmény elérése érdekében.</p>
+            <h2>Stratégi játék fajták:</h2>
+              <ul>
+                <li>Valós idejű stratégia <sup>(RTS)</sup>: <p>A Valós idejű stratégiai játék (RTS) műfaj egyik alműfaja, amelyben a játékos egy karaktert irányít két csapat közül valamelyikben. A játék célja, hogy az egyik csapatnak le kell rombolni a másik csapat központi bázisát.</p></li>
+                <li>Körökre osztott stratégia <sup>(TBS)</sup>: <p>Ezeket a játékokat az jellemzi, hogy a játékosoknak adott haderővel kell feladatokat teljesíteniük realisztikus, vagy ahhoz közelítő katonai taktika alkalmazásával, illetve hadműveletek végrehajtásával.</p></li>
+                <li>Online Többjátékos Csatamező <sup>(MOBA)</sup>: <p>A Valós idejű stratégiai játék (RTS) műfaj egyik alműfaja, amelyben a játékos egy karaktert irányít két csapat közül valamelyikben. A játék célja, hogy az egyik csapatnak le kell rombolni a másik csapat központi bázisát.</p></li>
+                <li>E<sup>X</sup>plore, E<sup>X</sup>pand, E<sup>X</sup>ploit, E<sup>X</sup>terminate <sup>(4X)</sup>: <p>A 4X műfajba körökre osztott és valós idejű stratégiai játékok is beletartoznak. A játékmenet egy birodalom felépítéséről szól a Földön, űrben vagy egy kitalált világban</p></li>
+              </ul>
         </div>
       </div>
 
@@ -103,7 +96,7 @@
               <img class="card-img-top card-picture" src="Képek/League Of Legends.jpg" alt="ASD">
               <div class="card-body">
                 <h5 class="card-title">League Of Legends</h5>
-                <p class="card-text">Ez egy nagyon JÓ JÁTÉK</p>
+                <p class="card-text"></p>
               </div>
 
               <div class="modal" id="lol_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -114,11 +107,60 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      [Szöveg a játékról]
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <div class="col-sm-12">
+                       <table>
+                        <thead>
+                          <tr>
+                            <th colspan="3" class="text-center">
+                              GÉPIGÉNY:
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th></th>
+                            <th colspan="1">Minimum gépigény:</th>
+                            <th>Ajánlott gépigény</th>
+                          </tr>
+                          <tr>
+                            <th colspan="1">
+                              CPU:
+                            </th>
+                            <td>
+                              Intel: Core i3-530 AMD: A6-3650</td>
+                              <td>Intel: Core i5-3300 AMD: Ryzen 3 1200</td>
+                          </tr>
+                          <tr>
+                            <th>RAM:</th>
+                            <td>2 GB RAM</td>
+                            <td>4 GB RAM</td>
+                          </tr>
+                          <tr>
+                            <th>GPU:</th>
+                            <td>NVidia: GeForce 9600GT AMD: HD 6570 Intel: Intel HD 4600 Integrated Graphics, 1GB VRAM</td>
+                            <td>NVidia: GeForce 560 AMD: Radeon HD 6950 Intel: Intel UHD 630 Integrated Graphics, 2GB VRAM</td>
+                          </tr>
+                          <tr>
+                            <th>DX:</th>
+                            <td>DirectX 10</td>
+                            <td>DirectX 11</td>
+                          </tr>
+                          <tr>
+                            <th>STO:</th>
+                            <td>16 GB HDD</td>
+                            <td>16 GB SSD</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="3" class="text-warning">ARM processzorok nem támogatottak!!!</td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" class="text-muted">A Játék gépigénye változhat, lehetséges hogy az itt felsorolt adatok már elavultak!</td>
+                          </tr>
+                        </tfoot>
+                       </table>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -131,7 +173,7 @@
             <img class="card-img-top card-picture" src="Képek/Crusader_Kings_III.jpg" alt="ASD">
             <div class="card-body">
               <h5 class="card-title">Crusader Kings 3</h5>
-              <p class="card-text">Ez egy nagyon JÓ JÁTÉK</p>
+              <p class="card-text"></p>
             </div>
 
             <div class="modal" id="ck3_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -143,10 +185,56 @@
                   </div>
                   <div class="modal-body">
                     [Szöveg a játékról]
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="col-sm-12">
+                      <table>
+                       <thead>
+                         <tr>
+                           <th colspan="3" class="text-center">
+                             GÉPIGÉNY:
+                           </th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <th></th>
+                           <th colspan="1">Minimum gépigény:</th>
+                           <th>Ajánlott gépigény</th>
+                         </tr>
+                         <tr>
+                           <th colspan="1">
+                             CPU:
+                           </th>
+                           <td>Intel® Core™ i3-2120 / AMD® FX 6350</td>
+                             <td>Intel® iCore™ i5-4670K or AMD® Ryzen™ 5 2400G0</td>
+                         </tr>
+                         <tr>
+                           <th>RAM:</th>
+                           <td>6 GB RAM</td>
+                           <td>8 GB RAM</td>
+                         </tr>
+                         <tr>
+                           <th>GPU:</th>
+                           <td>Nvidia® GeForce™ GTX 460 (1GB) / AMD® Radeon™ HD 7870 (2GB)</td>
+                           <td>Nvidia® GeForce™ GTX 1650 (4GB) / AMD® Radeon™ R9 390X (8GB)</td>
+                         </tr>
+                         <tr>
+                           <th>DX:</th>
+                           <td>Vulkan</td>
+                           <td>DirectX 11</td>
+                         </tr>
+                         <tr>
+                           <th>STO:</th>
+                           <td>8 GB HDD</td>
+                           <td>8 GB SSD</td>
+                         </tr>
+                       </tbody>
+                       <tfoot>
+                         <tr>
+                           <td colspan="3" class="text-muted">A Játék gépigénye változhat, lehetséges hogy az itt felsorolt adatok már elavultak!</td>
+                         </tr>
+                       </tfoot>
+                      </table>
+                     </div>
                   </div>
                 </div>
               </div>
@@ -159,7 +247,7 @@
             <img class="card-img-top card-picture" src="Képek/Hearts_of_Iron_IV.jpg" alt="ASD">
             <div class="card-body">
               <h5 class="card-title">Hearts Of Iron IV</h5>
-              <p class="card-text">Ez egy nagyon JÓ JÁTÉK</p>
+              <p class="card-text"></p>
             </div>
 
             <div class="modal" id="hoi4_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -171,23 +259,70 @@
                   </div>
                   <div class="modal-body">
                     [Szöveg a játékról]
+                    <div class="col-sm-12">
+                      <table>
+                       <thead>
+                         <tr>
+                           <th colspan="3" class="text-center">
+                             GÉPIGÉNY:
+                           </th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <th></th>
+                           <th colspan="1">Minimum gépigény:</th>
+                           <th>Ajánlott gépigény</th>
+                         </tr>
+                         <tr>
+                           <th colspan="1">
+                             CPU:
+                           </th>
+                           <td>Intel Core 2 Quad Q9400 @ 2.66 GHz / AMD Athlon II X4 650 @ 3.20 GHz</td>
+                             <td>Intel Core i5 750 @ 2.66 GHz / AMD Phenom II X4 955 @ 3.20 GHz</td>
+                         </tr>
+                         <tr>
+                           <th>RAM:</th>
+                           <td>4 GB RAM</td>
+                           <td>4 GB RAM</td>
+                         </tr>
+                         <tr>
+                           <th>GPU:</th>
+                           <td>ATI Radeon HD 5850 or NVIDIA GeForce GTX470 with 1GB VRAM</td>
+                           <td>ATI Radeon HD 6950 or NVIDIA GeForce GTX570 with 2GB VRAM</td>
+                         </tr>
+                         <tr>
+                           <th>DX:</th>
+                           <td>DirectX 9</td>
+                           <td>DirectX 9</td>
+                         </tr>
+                         <tr>
+                           <th>STO:</th>
+                           <td>2 GB HDD</td>
+                           <td>2 GB SSD</td>
+                         </tr>
+                       </tbody>
+                       <tfoot>
+                         <tr>
+                           <td colspan="3" class="text-muted">A Játék gépigénye változhat, lehetséges hogy az itt felsorolt adatok már elavultak!</td>
+                         </tr>
+                       </tfoot>
+                      </table>
+                     </div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
           <div class="col-sm-4 mb-3">
           <div class="card" style="width: 18rem;" id="civ6" onclick="cardfunction(3, this.id)" onmouseover="cardfunction(1, this.id)" onmouseout="cardfunction(2, this.id)">
             <img class="card-img-top card-picture" src="Képek/Civilization_VI.jpg" alt="ASD">
             <div class="card-body">
               <h5 class="card-title">Civilization VI</h5>
-              <p class="card-text">Ez egy nagyon JÓ JÁTÉK</p>
+              <p class="card-text"></p>
               </div>
 
               <div class="modal" id="civ6_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -199,10 +334,56 @@
                     </div>
                     <div class="modal-body">
                       [Szöveg a játékról]
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <div class="col-sm-12">
+                        <table>
+                         <thead>
+                           <tr>
+                             <th colspan="3" class="text-center">
+                               GÉPIGÉNY:
+                             </th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           <tr>
+                             <th></th>
+                             <th colspan="1">Minimum gépigény:</th>
+                             <th>Ajánlott gépigény</th>
+                           </tr>
+                           <tr>
+                             <th colspan="1">
+                               CPU:
+                             </th>
+                             <td>Intel Core i3 2.5 Ghz or AMD Phenom II 2.6 Ghz</td>
+                               <td>4th Gen Intel Core i5 2.5 Ghz or AMD FX8350 4.0 Ghz</td>
+                           </tr>
+                           <tr>
+                             <th>RAM:</th>
+                             <td>4 GB RAM</td>
+                             <td>8 GB RAM</td>
+                           </tr>
+                           <tr>
+                             <th>GPU:</th>
+                             <td>1 GB DirectX 11 Video Card (AMD 5570 or Nvidia 450)</td>
+                             <td>2 GB DirectX 11 Video Card (AMD 7970 or Nvidia 770)</td>
+                           </tr>
+                           <tr>
+                             <th>DX:</th>
+                             <td>DirectX 11</td>
+                             <td>DirectX 11</td>
+                           </tr>
+                           <tr>
+                             <th>STO:</th>
+                             <td>12 GB HDD</td>
+                             <td>12 GB SSD</td>
+                           </tr>
+                         </tbody>
+                         <tfoot>
+                           <tr>
+                             <td colspan="3" class="text-muted">A Játék gépigénye változhat, lehetséges hogy az itt felsorolt adatok már elavultak!</td>
+                           </tr>
+                         </tfoot>
+                        </table>
+                       </div>
                     </div>
                   </div>
                 </div>
@@ -215,7 +396,7 @@
               <img class="card-img-top card-picture" src="Képek/Europa_Universalis_4.jpg" alt="ASD">
               <div class="card-body">
                 <h5 class="card-title">Europa Universalis IV</h5>
-                <p class="card-text">Ez egy nagyon JÓ JÁTÉK</p>
+                <p class="card-text"></p>
               </div>
   
               <div class="modal" id="eu4_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -227,10 +408,56 @@
                     </div>
                     <div class="modal-body">
                       [Szöveg a játékról]
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <div class="col-sm-12">
+                        <table>
+                         <thead>
+                           <tr>
+                             <th colspan="3" class="text-center">
+                               GÉPIGÉNY:
+                             </th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           <tr>
+                             <th></th>
+                             <th colspan="1">Minimum gépigény:</th>
+                             <th>Ajánlott gépigény</th>
+                           </tr>
+                           <tr>
+                             <th colspan="1">
+                               CPU:
+                             </th>
+                             <td>Intel® Core™ i3-2105 / AMD® FX 4300</td>
+                               <td>Intel® Core™ i3-3240 / AMD® FX 8120</td>
+                           </tr>
+                           <tr>
+                             <th>RAM:</th>
+                             <td>4 GB RAM</td>
+                             <td>8 GB RAM</td>
+                           </tr>
+                           <tr>
+                             <th>GPU:</th>
+                             <td>Nvidia® GeForce™ GTX 460 / AMD® Radeon™ HD 5850</td>
+                             <td>Nvidia® GeForce™ GTX 560 Ti</td>
+                           </tr>
+                           <tr>
+                             <th>DX:</th>
+                             <td>DirectX 9</td>
+                             <td>DirectX 9</td>
+                           </tr>
+                           <tr>
+                             <th>STO:</th>
+                             <td>6 GB HDD</td>
+                             <td>6 GB SSD</td>
+                           </tr>
+                         </tbody>
+                         <tfoot>
+                           <tr>
+                             <td colspan="3" class="text-muted">A Játék gépigénye változhat, lehetséges hogy az itt felsorolt adatok már elavultak!</td>
+                           </tr>
+                         </tfoot>
+                        </table>
+                       </div>
                     </div>
                   </div>
                 </div>
@@ -243,7 +470,7 @@
             <img class="card-img-top card-picture" src="Képek/Dota_2.jpg" alt="ASD">
             <div class="card-body" id="dota2_text">
               <h5 class="card-title">DOTA 2</h5>
-              <p class="card-text">Ez egy nagyon JÓ JÁTÉK</p>
+              <p class="card-text"></p>
             </div>
 
             <div class="modal" id="dota2_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -255,10 +482,59 @@
                   </div>
                   <div class="modal-body">
                     [Szöveg a játékról]
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="col-sm-12">
+                      <table>
+                       <thead>
+                         <tr>
+                           <th colspan="3" class="text-center">
+                             GÉPIGÉNY:
+                           </th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <th></th>
+                           <th colspan="1">Minimum gépigény:</th>
+                           <th>Ajánlott gépigény</th>
+                         </tr>
+                         <tr>
+                           <th colspan="1">
+                             CPU:
+                           </th>
+                           <td>Bármelyik 2 magos processzor Intel vagy AMD 2.8 GHz-en</td>
+                             <td>-</td>
+                         </tr>
+                         <tr>
+                           <th>RAM:</th>
+                           <td>4 GB RAM</td>
+                           <td>-</td>
+                         </tr>
+                         <tr>
+                           <th>GPU:</th>
+                           <td>Nvidia GeForce 8600/9600GT, ATI/AMD Radeaon HD2600/3600</td>
+                           <td>-</td>
+                         </tr>
+                         <tr>
+                           <th>DX:</th>
+                           <td>DirectX 9</td>
+                           <td>-</td>
+                         </tr>
+                         <tr>
+                           <th>STO:</th>
+                           <td>15 GB HDD</td>
+                           <td>-</td>
+                         </tr>
+                       </tbody>
+                       <tfoot>
+                        <tr>
+                          <td colspan="3" class="text-warning">Internet hozzáférés szükséges a játék futattásához!</td>
+                        </tr>
+                         <tr>
+                           <td colspan="3" class="text-muted">A Játék gépigénye változhat, lehetséges hogy az itt felsorolt adatok már elavultak!</td>
+                         </tr>
+                       </tfoot> 
+                      </table>
+                     </div>
                   </div>
                 </div>
               </div>
@@ -268,7 +544,7 @@
       </div>
     </div>
   </div>
-    <footer class="container-fluid bg-dark text-center text-lg-start text-white col-sm-12">
+    <footer class="footer container-fluid bg-dark text-center text-lg-start text-white col-sm-12">
       <div class="footer-div container-fluid p-4">
         <div class="row mt-4">
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -371,7 +647,7 @@
           </div>
           <form
           id="newsletterForm"
-          onsubmit="return hirlevelfunction()"
+          onsubmit="return hirlevelfunction(1)"
           class="text-center">
           <div class="modal-body">
       <fieldset>
@@ -394,9 +670,14 @@
         <label for="email">Email cím:</label><br />
         <input type="email" id="email" name="email" required /><br /><br />
         <div class="text-center">
+          <input type="checkbox" id="adatvedelem" name="adatvedelem" required />
+          <label for="adatvedelem">Elfogadom az adatvédelmi szabályzatot</label>
           <div class="modal-footer">
+            <button type="button" onclick="hirlevelfunction()" class="btn">
+              <a class="btn btn-dark" style="text-align: center">Mégse</a>
+            </button>
             <button type="submit" value="Feliratkozás" class="btn">
-              <a class="btn btn-dark" style="text-align: center">Feliratkozás</a>
+              <a class="btn btn-primary" style="text-align: center">Feliratkozás</a>
             </button>
         </div>
       </fieldset>
@@ -405,7 +686,6 @@
           </div>
         </div>
       </div>
-    
   </div>
 
       <!-- Script -->
@@ -414,8 +694,9 @@
       <script>
           agent = navigator.userAgent
           document.getElementById("userAgent").innerHTML = String(agent)
+          //console.log(navigator.userAgent)
 
-        console.log(navigator.userAgent)
+
 function sidebar_open() {
   document.getElementById("Sidebar").style.display = "block";
 }
@@ -424,8 +705,15 @@ function sidebar_close() {
   document.getElementById("Sidebar").style.display = "none";
 }
 
-function hirlevelfunction(){
+function hirlevelfunction(answer){
+
+  if(answer === 1){
   window.alert("Sikeresen feliratkozott a hírlevélre!")
+  }
+  else{
+    location.reload()
+    window.alert("Feliratkozás megszakítva!")
+  }
 }
         </script>
              
