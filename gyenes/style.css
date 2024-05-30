@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(hatter.jpg);
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Navigációs sáv */
+  .navbar {
+    background-color: #81d4fa;
+    border-bottom: 2px solid black;
+  }
+
+  .nav-link {
+    color: black !important;
+    font-weight: bold;
+  }
+
+  .nav-link:hover {
+    color: #0288d1 !important;
+  }
+
+  /* Főoldal szekció */
+  .jumbotron {
+    background-color: black;
+    color: #fff;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+  }
+
+  .jumbotron h1 {
+    font-size: 2.5rem;
+  }
+
+  .jumbotron p {
+    font-size: 1.25rem;
+  }
+
+  /* Kártya szekció */
+  .card {
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .card-title {
+    color: black;
+    font-weight: bold;
+  }
+
+  .card-body h5 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+ .nepszeru{
+    text-decoration: underline;
+ }
+ #alahuzasnelkul{
+    text-decoration: none;
+ }
+ #keszitette{
+    font-weight: bold;
+    color: black;
+ }
