@@ -1,0 +1,18 @@
+body {
+    font-size: 20px;
+    padding: auto;
+}
+
+.szkozep {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kozep {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.h1 {
+    text-decoration: none;
+}
