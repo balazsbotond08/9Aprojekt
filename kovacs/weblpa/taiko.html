@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="osu.css">
+    <title>Taiko no Tatsujin: Drum Session - A dobos játék</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="kristof.html">Bevezető</a>
+        <a href="Osu!.html">Osu!</a>
+        <a href="geometrydash.html">Geometry dash</a>
+        <a href="taiko.html">Taiko no Tatsujin: Drum Session</a>
+        <a href="musedash.html">Muse dash</a>
+    </div><br>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Taiko no Tatsujin: Drum Session - A dobos játék</h1>
+                <p class="lead">A Taiko no Tatsujin: Drum Session egy dinamikus dobos játék, amelyet az arcades játékokból ismert Taiko no Tatsujin sorozatból adaptáltak konzolokra. A játék izgalmas dobütéseket és ritmusokat kínál, amelyeket a játékosoknak a megfelelő időben kell megjátszaniuk a pontokért.</p>
+                
+                <h2>Játékmenet</h2>
+                <p>A Taiko no Tatsujin: Drum Session játékmenete egyszerű: a játékosoknak követniük kell a képernyőn megjelenő dobütéseket és ritmusokat, amelyeket a megfelelő időben kell megütniük egy speciális dobpálcikával vagy a játékvezérlő gombjaival.</p>
+                <img class="mx-auto d-block" src="taikogp.png" alt="">
+                <div id="palyak-es-szintek" class="mt-5 container">
+                    <h2 class="text-center">Pályák és szintek</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Könnyű: Tutorial</h5>
+                                    <p class="card-text">A Tutorial a kezdők számára ideális bevezetés a játék világába, segít megtanulni az alapokat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Legkedveltebb: Exciting Adventure</h5>
+                                    <p class="card-text">Az Exciting Adventure a játékosok egyik kedvenc pályája, izgalmas kihívásokkal és fantasztikus zenékkel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nehezebb: Challenging Course</h5>
+                                    <p class="card-text">A Challenging Course egy középhaladó szint, amely kihívást jelent azoknak, akik már rutinosabbak a játékban.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <h2>Közösség és ranglisták</h2>
+                <p>A Taiko no Tatsujin: Drum Session közössége aktív, és a játékosok online ranglistákon versenyeznek, hogy megmutassák dobos készségeiket és pontszámukat.</p>
+                <h2>Követelmények</h2>
+                <p>A játék elérhető PlayStation konzolokra, és különféle platformokon játszható.</p>
+
+                <h2>Letöltés és telepítés</h2>
+                <p>A Taiko no Tatsujin: Drum Session letölthető a PlayStation Store-ból, és könnyen telepíthető a PlayStation konzolokra.</p>
+
+                <p>Próbáld ki a Taiko no Tatsujin: Drum Session-t, és éld át a dobos játék izgalmát!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center">Hírlevél feliratkozás</h2>
+                <form id="newsletterForm">
+                    <div class="form-group">
+                        <label for="name">Név:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail cím:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <input type="checkbox" name="adatvedelem" id="adatvedelem" required/>
+    <label for="adatvedelem">Elfogadom az adatvédelmi szbályokat</label> <br>
+                    <button type="submit" class="btn btn-primary btn-block">Feliratkozás</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+    
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+    
+            if (name && email) {
+                alert("Köszönjük, hogy feliratkoztál!");
+            } else {
+                alert("Kérjük, töltsd ki minden mezőt!");
+            }
+        });
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
