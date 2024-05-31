@@ -98,3 +98,13 @@ body{
 #navdiv nav a:nth-child(5):hover~span{
     left: 380px;
 }
+video{
+    max-width: 600px;
+}
+
+.videobal{
+    float: left;
+}
+
+.videojobb{
+    float: right;
