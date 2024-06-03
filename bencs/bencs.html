@@ -29,9 +29,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#feliratkozas">Feliratkozás</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Vissza a Főoldalra</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -121,25 +118,55 @@
         <div>
             <a href="#home">Vissza</a>
             </div>
-    </div>
-    <div class="border p-3 mb-3" id="feliratkozas">
-        <form action="javascript:letsgo()">
-            <fieldset>
-                <legend class="text-white">Adatok:</legend>
-                <label for="mail" class="text-white">Add meg az email címed!</label>
-                <input type="email" name="data" id="mail" class="form-control mb-2">
-                <label for="pw" class="text-white">Adj meg egy erős jelszót!</label>
-                <input type="password" name="data" id="pw" class="form-control mb-2">
-                <input type="submit" value="OK" class="btn btn-primary">
-            </fieldset>
-        </form>
-        <script>
-            function letsgo() {
-                alert("A jelszó: " + document.getElementById('pw').value);
-                localStorage.setItem("email", document.getElementById('mail').value);
-                localStorage.setItem("pass", document.getElementById('pw').value);
-            }
-        </script>
+            <div class="container mt-5 hirlevel" id="feliratkozas">
+                <h2>Feliratkozás a hírlevélre</h2>
+                <form id="subscriptionForm">
+                  <div class="form-group">
+                    <label for="felhasznalo">Felhasználónév</label>
+                    <input
+                      type="felhasznalo"
+                      class="form-control"
+                      id="felhasznalo"
+                      placeholder="írjon be egy felhasználónevet!"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email cím</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="írjon be egy email címet!"
+                      required
+                    />
+                  </div>
+                  <div class="form-group form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="privacyPolicy"
+                      required
+                    />
+                    <label class="form-check-label" for="privacyPolicy"
+                      >Elfogadom az adatvédelmi szerződéseket</label
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-primary">Feliratkozás</button>
+                </form>
+              </div>
+              <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+              <script>
+                document
+                  .getElementById("subscriptionForm")
+                  .addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    alert("Köszönjük, hogy feliratkozott!");
+                  });
+              </script>
+          
     </div>
     <div class="fekete">
     <footer class="text-center mt-3">
