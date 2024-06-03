@@ -1,53 +1,88 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliratkozás</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="feliratkozás.css">
-    <script src="sport.js"></script>
-</head>
-<body>
-      <div class="display-1 text-center">Hírlevél</div>
-      <br /><br /><br /><br /><br />
-      <form
-        id="newsletterForm"
-        onsubmit="return validateForm()"
-        class="text-center"
-      >
-        <fieldset>
-          <label for="vezeteknev">Vezetéknév:</label><br />
-          <input
-            type="text"
-            id="vezeteknev"
-            name="vezeteknev"
-            required
-          /><br /><br />
-  
-          <label for="keresztnev">Keresztnév:</label><br />
-          <input
-            type="text"
-            id="keresztnev"
-            name="keresztnev"
-            required
-          /><br /><br />
-  
-          <label for="email">Email cím:</label><br />
-          <input type="email" id="email" name="email" required /><br /><br />
-          <div class="text-center">
-            <button type="submit" value="Feliratkozás" class="btn">
-              <a class="btn btn-dark" style="text-align: center">Feliratkozás</a>
-            </button>
-          </div>
-        </fieldset>
-      </form>
-      <div class="text-center">
-        <button type="button" class="btn">
-          <a class="btn btn-dark" style="text-align: center" href="sport.html"
-            >Vissza</a
-          >
-        </button>
-      </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hírlevél</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="hírlevél.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: linear-gradient(
+          to right,
+          rgb(236, 228, 228),
+          rgb(238, 235, 235)
+        );
+      }
+    </style>
+    <div class="display-1 text-center">Hírlevél</div>
+    <br /><br /><br /><br /><br />
+    <form
+      id="newsletterForm"
+      onsubmit="return validateForm()"
+      class="text-center"
+    >
+      <fieldset>
+        <label for="vezeteknev">Vezetéknév:</label><br />
+        <input
+          type="text"
+          id="vezeteknev"
+          name="vezeteknev"
+          required
+        /><br /><br />
+
+        <label for="keresztnev">Keresztnév:</label><br />
+        <input
+          type="text"
+          id="keresztnev"
+          name="keresztnev"
+          required
+        /><br /><br />
+
+        <label for="email">Email cím:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <!-- Checkbox az adatvédelmi szabályzat elfogadásához -->
+        <input type="checkbox" id="adatvedelem" name="adatvedelem" required />
+        <label for="adatvedelem">Elfogadom az adatvédelmi szabályzatot</label><br /><br />
+
+        <div class="text-center">
+          <button type="submit" value="Feliratkozás" class="btn">
+            <a class="btn btn-dark" style="text-align: center">Feliratkozás</a>
+          </button>
+        </div>
+      </fieldset>
+    </form>
+    <div class="text-center">
+      <button type="button" class="btn">
+        <a class="btn btn-dark" style="text-align: center" href="balazsa.html"
+          >Vissza</a
+        >
+      </button>
+    </div>
+    <script>
+      function validateForm() {
+        var vezeteknev = document.getElementById("vezeteknev").value;
+        var keresztnev = document.getElementById("keresztnev").value;
+        var email = document.getElementById("email").value;
+        var adatvedelemChecked = document.getElementById("adatvedelem").checked;
+
+        if (vezeteknev == "" || keresztnev == "" || email == "" || !adatvedelemChecked) {
+          alert("Kérjük, töltse ki az összes mezőt, és fogadja el az adatvédelmi szabályzatot!");
+          return false;
+        }
+        alert("Köszönjük, hogy feliratkozott a hírlevelünkre!");
+        window.location.href = "balazsa.html";
+        return false;
+      }
+    </script>
+   
+  </body>
 </html>
